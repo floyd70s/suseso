@@ -1,0 +1,2026 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>itext.pdfocr.tesseract4</name>
+    </assembly>
+    <members>
+        <member name="T:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine">
+            <summary>
+            The implementation of
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>.
+            </summary>
+            <remarks>
+            The implementation of
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>.
+            This class provides possibilities to perform OCR, to read data from input
+            files and to return contained text in the required format.
+            Also there are possibilities to use features of "tesseract"
+            (optical character recognition engine for various operating systems).
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.SUPPORTED_IMAGE_FORMATS">
+            <summary>Supported image formats.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.tesseract4OcrEngineProperties">
+            <summary>Set of properties.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.DoTesseractOcr(System.IO.FileInfo,System.IO.FileInfo,iText.Pdfocr.Tesseract4.OutputFormat)">
+            <summary>Performs tesseract OCR for the first (or for the only) image page.</summary>
+            <param name="inputImage">
+            input image
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <param name="outputFile">output file for the result for the first page</param>
+            <param name="outputFormat">
+            selected
+            <see cref="T:iText.Pdfocr.Tesseract4.OutputFormat"/>
+            for tesseract
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.CreateTxtFile(System.Collections.Generic.IList{System.IO.FileInfo},System.IO.FileInfo)">
+            <summary>
+            Performs OCR using provided
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>
+            for the given list of
+            input images and saves output to a text file using provided path.
+            </summary>
+            <param name="inputImages">
+            
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of images to be OCRed
+            </param>
+            <param name="txtFile">file to be created</param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.GetTesseract4OcrEngineProperties">
+            <summary>
+            Gets properties for
+            <see cref="T:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine"/>.
+            </summary>
+            <returns>
+            set properties
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.SetTesseract4OcrEngineProperties(iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties)">
+            <summary>
+            Sets properties for
+            <see cref="T:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine"/>.
+            </summary>
+            <param name="tesseract4OcrEngineProperties">
+            set of properties
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties"/>
+            for
+            <see cref="T:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine"/>
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.GetLanguagesAsString">
+            <summary>
+            Gets list of languages concatenated with "+" symbol to a string
+            in format required by tesseract.
+            </summary>
+            <returns>
+            
+            <see cref="T:System.String"/>
+            of concatenated languages
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.DoImageOcr(System.IO.FileInfo)">
+            <summary>
+            Reads data from the provided input image file and returns retrieved
+            data in the format described below.
+            </summary>
+            <param name="input">
+            input image
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <returns>
+            
+            <see cref="!:System.Collections.IDictionary&lt;K, V&gt;"/>
+            where key is
+            <see cref="!:int?"/>
+            representing the number of the page and value is
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of
+            <see cref="T:iText.Pdfocr.TextInfo"/>
+            elements where each
+            <see cref="T:iText.Pdfocr.TextInfo"/>
+            element contains a word or a line and its 4
+            coordinates(bbox)
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.DoImageOcr(System.IO.FileInfo,iText.Pdfocr.Tesseract4.OutputFormat)">
+            <summary>
+            Reads data from the provided input image file and returns retrieved
+            data as string.
+            </summary>
+            <param name="input">
+            input image
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <param name="outputFormat">
+            return
+            <see cref="T:iText.Pdfocr.Tesseract4.OutputFormat"/>
+            result
+            </param>
+            <returns>
+            OCR result as a
+            <see cref="T:System.String"/>
+            that is
+            returned after processing the given image
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.IsWindows">
+            <summary>Checks current os type.</summary>
+            <returns>boolean true is current os is windows, otherwise - false</returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.IdentifyOsType">
+            <summary>Identifies type of current OS and return it (win, linux).</summary>
+            <returns>
+            type of current os as
+            <see cref="T:System.String"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.ValidateLanguages(System.Collections.Generic.IList{System.String})">
+            <summary>
+            Validates list of provided languages and
+            checks if they all exist in given tess data directory.
+            </summary>
+            <param name="languagesList">
+            
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of provided languages
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.GetThreadLocalMetaInfo">
+            <summary><inheritDoc/></summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.SetThreadLocalMetaInfo(iText.Kernel.Counter.Event.IMetaInfo)">
+            <summary><inheritDoc/></summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.DoTesseractOcr(System.IO.FileInfo,System.Collections.Generic.IList{System.IO.FileInfo},iText.Pdfocr.Tesseract4.OutputFormat,System.Int32)">
+            <summary>
+            Performs tesseract OCR using command line tool
+            or a wrapper for Tesseract OCR API.
+            </summary>
+            <remarks>
+            Performs tesseract OCR using command line tool
+            or a wrapper for Tesseract OCR API.
+            Please note that list of output files is accepted instead of a single file because
+            page number parameter is not respected in case of TIFF images not requiring preprocessing.
+            In other words, if the passed image is the TIFF image and according to the
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties"/>
+            no preprocessing is needed, each page of the TIFF image is OCRed and the number of output files in the list
+            is expected to be same as number of pages in the image, otherwise, only one file is expected
+            </remarks>
+            <param name="inputImage">
+            input image
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <param name="outputFiles">
+            
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of output files
+            (one per each page)
+            </param>
+            <param name="outputFormat">
+            selected
+            <see cref="T:iText.Pdfocr.Tesseract4.OutputFormat"/>
+            for tesseract
+            </param>
+            <param name="pageNumber">number of page to be processed</param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.DoTesseractOcr(System.IO.FileInfo,System.Collections.Generic.IList{System.IO.FileInfo},iText.Pdfocr.Tesseract4.OutputFormat,System.Int32,System.Boolean)">
+            <summary>
+            Performs tesseract OCR using command line tool
+            or a wrapper for Tesseract OCR API.
+            </summary>
+            <remarks>
+            Performs tesseract OCR using command line tool
+            or a wrapper for Tesseract OCR API.
+            Please note that list of output files is accepted instead of a single file because
+            page number parameter is not respected in case of TIFF images not requiring preprocessing.
+            In other words, if the passed image is the TIFF image and according to the
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties"/>
+            no preprocessing is needed, each page of the TIFF image is OCRed and the number of output files in the list
+            is expected to be same as number of pages in the image, otherwise, only one file is expected
+            </remarks>
+            <param name="inputImage">
+            input image
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <param name="outputFiles">
+            
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of output files
+            (one per each page)
+            </param>
+            <param name="outputFormat">
+            selected
+            <see cref="T:iText.Pdfocr.Tesseract4.OutputFormat"/>
+            for tesseract
+            </param>
+            <param name="pageNumber">number of page to be processed</param>
+            <param name="dispatchEvent">
+            indicates if
+            <see cref="T:iText.Pdfocr.Tesseract4.Events.PdfOcrTesseract4Event"/>
+            needs to be dispatched
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.GetTessData">
+            <summary>Gets path to provided tess data directory.</summary>
+            <returns>
+            path to provided tess data directory as
+            <see cref="T:System.String"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.ProcessInputFiles(System.IO.FileInfo,iText.Pdfocr.Tesseract4.OutputFormat)">
+            <summary>Reads data from the provided input image file.</summary>
+            <param name="input">
+            input image
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <param name="outputFormat">
+            
+            <see cref="T:iText.Pdfocr.Tesseract4.OutputFormat"/>
+            for the result returned
+            by
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>
+            </param>
+            <returns>
+            
+            <see cref="T:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.ITesseractOcrResult"/>
+            instance, either
+            <see cref="T:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.StringTesseractOcrResult"/>
+            if output format is TXT, or
+            <see cref="T:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.TextInfoTesseractOcrResult"/>
+            if the output format is HOCR
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.CreateTempFile(System.String)">
+            <summary>Creates a temporary file with given extension.</summary>
+            <param name="extension">
+            file extension for a new file
+            <see cref="T:System.String"/>
+            </param>
+            <returns>
+            a new created
+            <see cref="T:System.IO.FileInfo"/>
+            instance
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.VerifyImageFormatValidity(System.IO.FileInfo)">
+            <summary>Validates input image format.</summary>
+            <remarks>
+            Validates input image format.
+            Allowed image formats are listed
+            in
+            <see cref="F:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine.SUPPORTED_IMAGE_FORMATS"/>
+            </remarks>
+            <param name="image">
+            input image
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+        </member>
+        <member name="T:iText.Pdfocr.Tesseract4.Events.PdfOcrTesseract4Event">
+            <summary>Class for ocr events</summary>
+        </member>
+        <member name="T:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions">
+            <summary>Additional options applied on image preprocessing step.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions.tileWidth">
+            <summary>Adaptive threshold tile width as described here: http://www.leptonica.org/binarization.html.</summary>
+            <remarks>
+            Adaptive threshold tile width as described here: http://www.leptonica.org/binarization.html.
+            Default value of 0 is considered as full image width which means no tiling.
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions.tileHeight">
+            <summary>Adaptive threshold tile height as described here: http://www.leptonica.org/binarization.html.</summary>
+            <remarks>
+            Adaptive threshold tile height as described here: http://www.leptonica.org/binarization.html.
+            Default value of 0 is considered as full image height which means no tiling.
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions.smoothTiling">
+            <summary>Adaptive threshold smoothing as described here: http://www.leptonica.org/binarization.html.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions.GetTileWidth">
+            <summary>
+            Gets
+            <see cref="F:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions.tileWidth"/>.
+            </summary>
+            <returns>tile width</returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions.SetTileWidth(System.Int32)">
+            <summary>
+            Sets
+            <see cref="F:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions.tileWidth"/>.
+            </summary>
+            <param name="tileWidth">tile width</param>
+            <returns>
+            
+            <see cref="T:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions.GetTileHeight">
+            <summary>
+            Gets
+            <see cref="F:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions.tileHeight"/>.
+            </summary>
+            <returns>tile height</returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions.SetTileHeight(System.Int32)">
+            <summary>
+            Sets
+            <see cref="F:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions.tileHeight"/>.
+            </summary>
+            <param name="tileHeight">tile height</param>
+            <returns>
+            
+            <see cref="T:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions.IsSmoothTiling">
+            <summary>
+            Gets
+            <see cref="F:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions.smoothTiling"/>.
+            </summary>
+            <returns>smooth tiling flag</returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions.SetSmoothTiling(System.Boolean)">
+            <summary>
+            Sets
+            <see cref="F:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions.smoothTiling"/>.
+            </summary>
+            <param name="smoothTiling">smooth tiling flag</param>
+            <returns>
+            
+            <see cref="T:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions"/>
+            </returns>
+        </member>
+        <member name="T:iText.Pdfocr.Tesseract4.ImagePreprocessingUtil">
+            <summary>Utilities class to work with images.</summary>
+            <remarks>
+            Utilities class to work with images.
+            Class provides tools for basic image preprocessing.
+            </remarks>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.ImagePreprocessingUtil.#ctor">
+            <summary>
+            Creates a new
+            <see cref="T:iText.Pdfocr.Tesseract4.ImagePreprocessingUtil"/>
+            instance.
+            </summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.ImagePreprocessingUtil.GetNumberOfPageTiff(System.IO.FileInfo)">
+            <summary>Counts number of pages in the provided tiff image.</summary>
+            <param name="inputImage">
+            input image
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <returns>number of pages in the provided TIFF image</returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.ImagePreprocessingUtil.IsTiffImage(System.IO.FileInfo)">
+            <summary>Checks whether image format is TIFF.</summary>
+            <param name="inputImage">
+            input image
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <returns>true if provided image has 'tiff' or 'tif' extension</returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.ImagePreprocessingUtil.GetImageType(System.IO.FileInfo)">
+            <summary>Gets the image type.</summary>
+            <param name="inputImage">
+            input image
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <returns>
+            image type
+            <see cref="T:iText.IO.Image.ImageType"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.ImagePreprocessingUtil.ReadImageFromFile(System.IO.FileInfo)">
+            <summary>Reads provided image file using stream.</summary>
+            <param name="inputFile">
+            input image
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <returns>
+            returns a
+            <see cref="T:System.Drawing.Bitmap"/>
+            as the result
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.ImagePreprocessingUtil.ReadAsPixAndConvertToBufferedImage(System.IO.FileInfo)">
+            <summary>
+            Reads input file as Leptonica
+            <see cref="T:Tesseract.Pix"/>
+            and
+            converts it to
+            <see cref="T:System.Drawing.Bitmap"/>.
+            </summary>
+            <param name="inputImage">
+            input image
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <returns>
+            returns a
+            <see cref="T:System.Drawing.Bitmap"/>
+            as the result
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.ImagePreprocessingUtil.PreprocessImage(System.IO.FileInfo,System.Int32,iText.Pdfocr.Tesseract4.ImagePreprocessingOptions)">
+            <summary>Performs basic image preprocessing using buffered image (if provided).</summary>
+            <remarks>
+            Performs basic image preprocessing using buffered image (if provided).
+            Preprocessed image will be saved in temporary directory.
+            </remarks>
+            <param name="inputFile">
+            input image
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <param name="pageNumber">number of page to be preprocessed</param>
+            <param name="imagePreprocessingOptions">
+            
+            <see cref="T:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions"/>
+            </param>
+            <returns>
+            created preprocessed image as
+            <see cref="T:Tesseract.Pix"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.ImagePreprocessingUtil.ReadImage(System.IO.FileInfo)">
+            <summary>
+            Reads input image as a
+            <see cref="T:System.Drawing.Bitmap"/>.
+            </summary>
+            <remarks>
+            Reads input image as a
+            <see cref="T:System.Drawing.Bitmap"/>.
+            If it is not possible to read
+            <see cref="T:System.Drawing.Bitmap"/>
+            from
+            input file, image will be read as a
+            <see cref="T:Tesseract.Pix"/>
+            and then converted to
+            <see cref="T:System.Drawing.Bitmap"/>.
+            </remarks>
+            <param name="inputImage">original input image</param>
+            <returns>
+            input image as a
+            <see cref="T:System.Drawing.Bitmap"/>
+            </returns>
+        </member>
+        <member name="T:iText.Pdfocr.Tesseract4.LeptonicaImageRotationHandler">
+            <summary>
+            Leptonica based implementation of
+            <see cref="T:iText.Pdfocr.IImageRotationHandler"/>.
+            </summary>
+        </member>
+        <member name="T:iText.Pdfocr.Tesseract4.OutputFormat">
+            <summary>Enumeration of the available output formats.</summary>
+            <remarks>
+            Enumeration of the available output formats.
+            It is used when there is possibility in selected Reader to process input
+            file and to return result in the required output format.
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.OutputFormat.HOCR">
+            <summary>
+            Reader will produce XHTML output compliant
+            with the hOCR specification.
+            </summary>
+            <remarks>
+            Reader will produce XHTML output compliant
+            with the hOCR specification.
+            Output will be parsed and represented as
+            <see cref="!:IList&lt;E&gt;"/>
+            of
+            <see cref="T:iText.Pdfocr.TextInfo"/>
+            objects
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.OutputFormat.TXT">
+            <summary>Reader will produce plain txt file.</summary>
+        </member>
+        <member name="T:iText.Pdfocr.Tesseract4.PdfOcrTesseract4ProductInfo">
+            <summary>Product info about this iText add-on.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.PdfOcrTesseract4ProductInfo.PRODUCT_NAME">
+            <summary>The product name.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.PdfOcrTesseract4ProductInfo.MAJOR_VERSION">
+            <summary>The major version number.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.PdfOcrTesseract4ProductInfo.MINOR_VERSION">
+            <summary>The minor version number.</summary>
+        </member>
+        <member name="T:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine">
+            <summary>
+            The implementation of
+            <see cref="T:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine"/>
+            for tesseract OCR.
+            </summary>
+            <remarks>
+            The implementation of
+            <see cref="T:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine"/>
+            for tesseract OCR.
+            This class provides possibilities to use features of "tesseract" CL tool
+            (optical character recognition engine for various operating systems).
+            Please note that it's assumed that "tesseract" has already been
+            installed locally.
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine.pathToExecutable">
+            <summary>Path to the tesseract executable.</summary>
+            <remarks>
+            Path to the tesseract executable.
+            By default it's assumed that "tesseract" already exists in the "PATH".
+            </remarks>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine.#ctor(iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties)">
+            <summary>
+            Creates a new
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine"/>
+            instance.
+            </summary>
+            <param name="tesseract4OcrEngineProperties">set of properties</param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine.#ctor(System.String,iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties)">
+            <summary>
+            Creates a new
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine"/>
+            instance.
+            </summary>
+            <param name="executablePath">path to tesseract executable</param>
+            <param name="tesseract4OcrEngineProperties">set of properties</param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine.GetPathToExecutable">
+            <summary>Gets path to tesseract executable.</summary>
+            <returns>path to tesseract executable</returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine.SetPathToExecutable(System.String)">
+            <summary>Sets path to tesseract executable.</summary>
+            <remarks>
+            Sets path to tesseract executable.
+            By default it's assumed that "tesseract" already exists in the "PATH".
+            </remarks>
+            <param name="path">path to tesseract executable</param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine.DoTesseractOcr(System.IO.FileInfo,System.Collections.Generic.IList{System.IO.FileInfo},iText.Pdfocr.Tesseract4.OutputFormat,System.Int32,System.Boolean)">
+            <summary>
+            Performs tesseract OCR using command line tool for the selected page
+            of input image (by default 1st).
+            </summary>
+            <remarks>
+            Performs tesseract OCR using command line tool for the selected page
+            of input image (by default 1st).
+            Please note that list of output files is accepted instead of a single file because
+            page number parameter is not respected in case of TIFF images not requiring preprocessing.
+            In other words, if the passed image is the TIFF image and according to the
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties"/>
+            no preprocessing is needed, each page of the TIFF image is OCRed and the number of output files in the list
+            is expected to be same as number of pages in the image, otherwise, only one file is expected
+            </remarks>
+            <param name="inputImage">
+            input image
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <param name="outputFiles">
+            
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of output files
+            (one per each page)
+            </param>
+            <param name="outputFormat">
+            selected
+            <see cref="T:iText.Pdfocr.Tesseract4.OutputFormat"/>
+            for tesseract
+            </param>
+            <param name="pageNumber">number of page to be processed</param>
+            <param name="dispatchEvent">
+            indicates if
+            <see cref="T:iText.Pdfocr.Tesseract4.Events.PdfOcrTesseract4Event"/>
+            needs to be dispatched
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine.SetHocrOutput(System.Collections.Generic.IList{System.String})">
+            <summary>Sets hocr output format.</summary>
+            <param name="command">result command as list of strings</param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine.AddPreserveInterwordSpaces(System.Collections.Generic.IList{System.String})">
+            <summary>Sets preserve_interword_spaces option.</summary>
+            <param name="command">result command as list of strings</param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine.AddOutputFormat(System.Collections.Generic.IList{System.String},iText.Pdfocr.Tesseract4.OutputFormat)">
+            <summary>Add output format.</summary>
+            <param name="command">result command as list of strings</param>
+            <param name="outputFormat">output format</param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine.AddUserWords(System.Collections.Generic.IList{System.String},System.String)">
+            <summary>Add path to user-words file for tesseract executable.</summary>
+            <param name="command">result command as list of strings</param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine.AddDefaultDpi(System.Collections.Generic.IList{System.String})">
+            <summary>Set default DPI for image.</summary>
+            <param name="command">result command as list of strings</param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine.AddTessData(System.Collections.Generic.IList{System.String})">
+            <summary>Adds path to tess data to the command list.</summary>
+            <param name="command">result command as list of strings</param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine.AddPageSegMode(System.Collections.Generic.IList{System.String})">
+            <summary>Adds selected Page Segmentation Mode as parameter.</summary>
+            <param name="command">result command as list of strings</param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine.AddLanguages(System.Collections.Generic.IList{System.String})">
+            <summary>Add list of selected languages concatenated to a string as parameter.</summary>
+            <param name="command">result command as list of strings</param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine.AddInputFile(System.Collections.Generic.IList{System.String},System.String)">
+            <summary>Adds path to the input image file.</summary>
+            <param name="command">result command as list of strings</param>
+            <param name="imagePath">path to the input image file as string</param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine.AddOutputFile(System.Collections.Generic.IList{System.String},System.IO.FileInfo,iText.Pdfocr.Tesseract4.OutputFormat,System.String)">
+            <summary>Adds path to temporary output file with result.</summary>
+            <param name="command">result command as list of strings</param>
+            <param name="outputFile">output file with result</param>
+            <param name="outputFormat">
+            selected
+            <see cref="T:iText.Pdfocr.Tesseract4.OutputFormat"/>
+            for tesseract
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine.AddQuotes(System.String)">
+            <summary>Surrounds given string with quotes.</summary>
+            <param name="value">string to be wrapped into quotes</param>
+            <returns>wrapped string</returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine.PreprocessImage(System.IO.FileInfo,System.Int32)">
+            <summary>Preprocess given image if it is needed.</summary>
+            <param name="inputImage">
+            original input image
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <param name="pageNumber">number of page to be OCRed</param>
+            <returns>
+            path to output image as
+            <see cref="T:System.String"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine.CheckTesseractInstalled(System.String)">
+            <summary>
+            Check whether tesseract executable is installed on the machine and
+            provided path to tesseract executable is correct.
+            </summary>
+            <param name="execPath">path to tesseract executable</param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine.GetExtension(System.IO.FileInfo)">
+            <summary>Gets input image file extension.</summary>
+            <param name="inputImage">input  file</param>
+            <returns>
+            file extension as a
+            <see cref="T:System.String"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4ExecutableOcrEngine.AreEqualParentDirectories(System.String,System.String)">
+            <summary>Checks whether parent directories are equal for the passed file paths.</summary>
+            <param name="firstPath">path to the first file</param>
+            <param name="secondPath">path to the second file</param>
+            <returns>true if parent directories are equal, otherwise - false</returns>
+        </member>
+        <member name="T:iText.Pdfocr.Tesseract4.Tesseract4LibOcrEngine">
+            <summary>
+            The implementation of
+            <see cref="T:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine"/>
+            for tesseract OCR.
+            </summary>
+            <remarks>
+            The implementation of
+            <see cref="T:iText.Pdfocr.Tesseract4.AbstractTesseract4OcrEngine"/>
+            for tesseract OCR.
+            This class provides possibilities to use features of "tesseract"
+            using tess4j.
+            Please note that this class is not thread-safe, in other words this Tesseract engine cannot
+            be used for multithreaded processing. You should create one instance per thread
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.Tesseract4LibOcrEngine.tesseractInstance">
+            <summary>
+            <see cref="T:Tesseract.TesseractEngine"/>
+            Instance.
+            </summary>
+            <remarks>
+            <see cref="T:Tesseract.TesseractEngine"/>
+            Instance.
+            (depends on OS type)
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.Tesseract4LibOcrEngine.ASCII_STRING_PATTERN">
+            <summary>Pattern for matching ASCII string.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4LibOcrEngine.#ctor(iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties)">
+            <summary>
+            Creates a new
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4LibOcrEngine"/>
+            instance.
+            </summary>
+            <param name="tesseract4OcrEngineProperties">set of properteis</param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4LibOcrEngine.GetTesseractInstance">
+            <summary>Gets tesseract instance.</summary>
+            <returns>
+            initialized
+            <see cref="T:Tesseract.TesseractEngine"/>
+            instance
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4LibOcrEngine.InitializeTesseract(iText.Pdfocr.Tesseract4.OutputFormat)">
+            <summary>
+            Initializes instance of tesseract if it haven't been already
+            initialized or it have been disposed and sets all the required
+            properties.
+            </summary>
+            <param name="outputFormat">
+            selected
+            <see cref="T:iText.Pdfocr.Tesseract4.OutputFormat"/>
+            for tesseract
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4LibOcrEngine.DoTesseractOcr(System.IO.FileInfo,System.Collections.Generic.IList{System.IO.FileInfo},iText.Pdfocr.Tesseract4.OutputFormat,System.Int32,System.Boolean)">
+            <summary>
+            Performs tesseract OCR using wrapper for Tesseract OCR API for the selected page
+            of input image (by default 1st).
+            </summary>
+            <remarks>
+            Performs tesseract OCR using wrapper for Tesseract OCR API for the selected page
+            of input image (by default 1st).
+            Please note that list of output files is accepted instead of a single file because
+            page number parameter is not respected in case of TIFF images not requiring preprocessing.
+            In other words, if the passed image is the TIFF image and according to the
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties"/>
+            no preprocessing is needed, each page of the TIFF image is OCRed and the number of output files in the list
+            is expected to be same as number of pages in the image, otherwise, only one file is expected
+            </remarks>
+            <param name="inputImage">
+            input image
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <param name="outputFiles">
+            
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of output files
+            (one per each page)
+            </param>
+            <param name="outputFormat">
+            selected
+            <see cref="T:iText.Pdfocr.Tesseract4.OutputFormat"/>
+            for tesseract
+            </param>
+            <param name="pageNumber">number of page to be processed</param>
+            <param name="dispatchEvent">
+            indicates if
+            <see cref="T:iText.Pdfocr.Tesseract4.Events.PdfOcrTesseract4Event"/>
+            needs to be dispatched
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4LibOcrEngine.ValidateTessDataPath(System.String)">
+            <summary>
+            Validates Tess Data path,
+            checks if tess data path contains only ASCII charset.
+            </summary>
+            <remarks>
+            Validates Tess Data path,
+            checks if tess data path contains only ASCII charset.
+            Note: tesseract lib has issues with non ASCII characters in tess data path.
+            </remarks>
+            <param name="tessDataPath">
+            
+            <see cref="T:System.String"/>
+            path to tess data
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4LibOcrEngine.GetOcrResultForMultiPage(System.IO.FileInfo,iText.Pdfocr.Tesseract4.OutputFormat)">
+            <summary>
+            Gets OCR result from provided multi-page image and returns result as
+            list of strings for each page.
+            </summary>
+            <remarks>
+            Gets OCR result from provided multi-page image and returns result as
+            list of strings for each page. This method is used for tiff images
+            when preprocessing is not needed.
+            </remarks>
+            <param name="inputImage">
+            input image
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <param name="outputFormat">
+            selected
+            <see cref="T:iText.Pdfocr.Tesseract4.OutputFormat"/>
+            for tesseract
+            </param>
+            <returns>
+            list of result string that will be written to a temporary files
+            later
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4LibOcrEngine.GetOcrResultForSinglePage(System.IO.FileInfo,iText.Pdfocr.Tesseract4.OutputFormat,System.Int32)">
+            <summary>
+            Gets OCR result from provided single page image and preprocesses it if
+            it is needed.
+            </summary>
+            <param name="inputImage">
+            input image
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <param name="outputFormat">
+            selected
+            <see cref="T:iText.Pdfocr.Tesseract4.OutputFormat"/>
+            for tesseract
+            </param>
+            <param name="pageNumber">number of page to be OCRed</param>
+            <returns>result as string that will be written to a temporary file later</returns>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.Tesseract4LogMessageConstant.CANNOT_CONVERT_IMAGE_TO_GRAYSCALE">
+            <summary>Constant is not used.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.Tesseract4LogMessageConstant.CANNOT_CONVERT_IMAGE_TO_PIX">
+            <summary>Constant is not used.</summary>
+        </member>
+        <member name="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties">
+            <summary>
+            Properties that will be used by the
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>.
+            </summary>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.DEFAULT_USER_WORDS_SUFFIX">
+            <summary>Default suffix for user-word file.</summary>
+            <remarks>
+            Default suffix for user-word file.
+            (e.g. name: 'eng.user-words')
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.DEFAULT_LANGUAGE">
+            <summary>Default language for OCR.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.tessDataDir">
+            <summary>Path to directory with tess data.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.pageSegMode">
+            <summary>Page Segmentation Mode.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.textPositioning">
+            <summary>Defines the way text is retrieved from tesseract output.</summary>
+            <remarks>
+            Defines the way text is retrieved from tesseract output.
+            Default text positioning is by lines.
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.pathToUserWordsFile">
+            <summary>Path to the file containing user words.</summary>
+            <remarks>
+            Path to the file containing user words.
+            Each word should be on a new line,
+            file should end with a newline character.
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.isUserWordsFileTemporary">
+            <summary>Indicates if user words file is temporary and has to be removed.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.useTxtToImproveHocrParsing">
+            <summary>Used to make HOCR recognition result more precise.</summary>
+            <remarks>
+            Used to make HOCR recognition result more precise.
+            This is needed for cases of Thai language or some Chinese dialects
+            where every character is interpreted as a single word.
+            For more information see https://github.com/tesseract-ocr/tesseract/issues/2702
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.imagePreprocessingOptions">
+            <summary>Settings for image preprocessing.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.minimalConfidenceLevel">
+            <summary>Minimal confidence level for HOCR line to be considered as properly recognized.</summary>
+            <remarks>
+            Minimal confidence level for HOCR line to be considered as properly recognized.
+            If real confidence level is lower then line is ignored
+            Default value is 0 which means that everything is considered as properly recognized
+            Value may vary in range of 0-100
+            </remarks>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.#ctor">
+            <summary>
+            Creates a new
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties"/>
+            instance.
+            </summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.#ctor(iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties)">
+            <summary>
+            Creates a new
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties"/>
+            instance
+            based on another
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties"/>
+            instance (copy
+            constructor).
+            </summary>
+            <param name="other">
+            the other
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties"/>
+            instance
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.GetDefaultLanguage">
+            <summary>Gets default language for ocr.</summary>
+            <returns>default language - "eng"</returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.GetDefaultUserWordsSuffix">
+            <summary>Gets default user words suffix.</summary>
+            <returns>default suffix for user words files</returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.GetPathToTessData">
+            <summary>Gets path to directory with tess data.</summary>
+            <returns>path to directory with tess data</returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.SetPathToTessData(System.IO.FileInfo)">
+            <summary>Sets path to directory with tess data.</summary>
+            <param name="tessData">
+            path to train directory as
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <returns>
+            the
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties"/>
+            instance
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.GetPageSegMode">
+            <summary>Gets Page Segmentation Mode.</summary>
+            <returns>
+            psm mode as
+            <see cref="!:int?"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.SetPageSegMode(System.Nullable{System.Int32})">
+            <summary>Sets Page Segmentation Mode.</summary>
+            <remarks>
+            Sets Page Segmentation Mode.
+            More detailed explanation about psm modes could be found
+            here https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#options
+            Note that in documentation it is stated that default value of PSM is 3.
+            This is true for tesseract executable,
+            but for tesseract lib it is -1 which has negative impact on some documents.
+            That's why in the code we set it explicitly to 3.
+            </remarks>
+            <param name="mode">
+            psm mode as
+            <see cref="!:int?"/>
+            </param>
+            <returns>
+            the
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties"/>
+            instance
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.IsPreprocessingImages">
+            <summary>Checks whether image preprocessing is needed.</summary>
+            <returns>true if images need to be preprocessed, otherwise - false</returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.SetPreprocessingImages(System.Boolean)">
+            <summary>Sets true if image preprocessing is needed.</summary>
+            <param name="preprocess">
+            true if images need to be preprocessed,
+            otherwise - false
+            </param>
+            <returns>
+            the
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties"/>
+            instance
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.GetTextPositioning">
+            <summary>
+            Defines the way text is retrieved from tesseract output using
+            <see cref="T:iText.Pdfocr.Tesseract4.TextPositioning"/>.
+            </summary>
+            <returns>the way text is retrieved</returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.SetTextPositioning(iText.Pdfocr.Tesseract4.TextPositioning)">
+            <summary>
+            Defines the way text is retrieved from tesseract output
+            using
+            <see cref="T:iText.Pdfocr.Tesseract4.TextPositioning"/>.
+            </summary>
+            <param name="positioning">the way text is retrieved</param>
+            <returns>
+            the
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties"/>
+            instance
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.SetUserWords(System.String,System.Collections.Generic.IList{System.String})">
+            <summary>
+            Using provided list of words there will be created
+            temporary file containing words (one per line) which
+            ends with a new line character.
+            </summary>
+            <remarks>
+            Using provided list of words there will be created
+            temporary file containing words (one per line) which
+            ends with a new line character. Train data for provided language
+            should exist in specified tess data directory.
+            NOTE:
+            User words dictionary doesn't work properly in tesseract4
+            and hidden for public usage until fix is available
+            </remarks>
+            <param name="language">
+            language as
+            <see cref="T:System.String"/>
+            , tessdata for
+            this languages has to exist in tess data directory
+            </param>
+            <param name="userWords">
+            
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of custom words
+            </param>
+            <returns>
+            the
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties"/>
+            instance
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.SetUserWords(System.String,System.IO.Stream)">
+            <summary>
+            Using provided input stream there will be created
+            temporary file (with name 'language.user-words')
+            containing words (one per line) which ends with
+            a new line character.
+            </summary>
+            <remarks>
+            Using provided input stream there will be created
+            temporary file (with name 'language.user-words')
+            containing words (one per line) which ends with
+            a new line character. Train data for provided language
+            should exist in specified tess data directory.
+            NOTE:
+            User words dictionary doesn't work properly in tesseract4
+            and hidden for public usage until fix is available
+            </remarks>
+            <param name="language">
+            language as
+            <see cref="T:System.String"/>
+            , tessdata for
+            this languages has to exist in tess data directory
+            </param>
+            <param name="inputStream">
+            custom user words as
+            <see cref="T:System.IO.Stream"/>
+            </param>
+            <returns>
+            the
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties"/>
+            instance
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.GetPathToUserWordsFile">
+            <summary>Returns path to the user words file.</summary>
+            <remarks>
+            Returns path to the user words file.
+            NOTE:
+            User words dictionary doesn't work properly in tesseract4
+            and hidden for public usage until fix is available
+            </remarks>
+            <returns>
+            path to user words file as
+            <see cref="T:System.String"/>
+            if it
+            exists, otherwise - null
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.SetPathToUserWordsFile(System.String)">
+            <summary>Sets path to the user words file.</summary>
+            <remarks>
+            Sets path to the user words file.
+            NOTE:
+            User words dictionary doesn't work properly in tesseract4
+            and hidden for public usage until fix is available
+            </remarks>
+            <param name="pathToUserWordsFile">
+            path to user words file
+            as
+            <see cref="T:System.String"/>
+            </param>
+            <returns>
+            the
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties"/>
+            instance
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.SetPathToUserWordsFile(System.String,System.Boolean)">
+            <summary>Sets path to the user words file.</summary>
+            <param name="pathToUserWordsFile">
+            path to user words file
+            as
+            <see cref="T:System.String"/>
+            </param>
+            <param name="isTempFile">indicates if user words file is temporary and has to be removed</param>
+            <returns>
+            the
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties"/>
+            instance
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.IsUserWordsFileTemporary">
+            <summary>Indicates if user words file is temporary and has to be removed.</summary>
+            <returns>true if the file is temporary, otherwise false.</returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.IsUseTxtToImproveHocrParsing">
+            <summary>
+            Gets
+            <see cref="F:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.useTxtToImproveHocrParsing"/>.
+            </summary>
+            <remarks>
+            Gets
+            <see cref="F:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.useTxtToImproveHocrParsing"/>.
+            Used to make HOCR recognition result more precise.
+            This is needed for cases of Thai language or some Chinese dialects
+            where every character is interpreted as a single word.
+            For more information see https://github.com/tesseract-ocr/tesseract/issues/2702
+            </remarks>
+            <returns>
+            
+            <see cref="F:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.useTxtToImproveHocrParsing"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.SetUseTxtToImproveHocrParsing(System.Boolean)">
+            <summary>
+            Sets
+            <see cref="F:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.useTxtToImproveHocrParsing"/>.
+            </summary>
+            <remarks>
+            Sets
+            <see cref="F:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.useTxtToImproveHocrParsing"/>.
+            Used to make HOCR recognition result more precise.
+            This is needed for cases of Thai language or some Chinese dialects
+            where every character is interpreted as a single word.
+            For more information see https://github.com/tesseract-ocr/tesseract/issues/2702
+            </remarks>
+            <param name="useTxtToImproveHocrParsing">
+            
+            <see cref="F:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.useTxtToImproveHocrParsing"/>
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.GetImagePreprocessingOptions">
+            <summary>
+            Gets
+            <see cref="F:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.imagePreprocessingOptions"/>.
+            </summary>
+            <returns>
+            
+            <see cref="T:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.SetImagePreprocessingOptions(iText.Pdfocr.Tesseract4.ImagePreprocessingOptions)">
+            <summary>
+            Sets
+            <see cref="F:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.imagePreprocessingOptions"/>.
+            </summary>
+            <param name="imagePreprocessingOptions">
+            
+            <see cref="T:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions"/>
+            </param>
+            <returns>
+            the
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties"/>
+            instance
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.GetMinimalConfidenceLevel">
+            <summary>Gets minimal confidence level for HOCR line to be considered as properly recognized.</summary>
+            <remarks>
+            Gets minimal confidence level for HOCR line to be considered as properly recognized.
+            If real confidence level is lower then line is ignored
+            Default value is 0 which means that everything is considered as properly recognized
+            Value may vary in range of 0-100
+            </remarks>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties.SetMinimalConfidenceLevel(System.Int32)">
+            <summary>Sets minimal confidence level for HOCR line to be considered as properly recognized.</summary>
+            <remarks>
+            Sets minimal confidence level for HOCR line to be considered as properly recognized.
+            If real confidence level is lower then line is ignored
+            Default value is 0 which means that everything is considered as properly recognized
+            Value may vary in range of 0-100
+            </remarks>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrException.#ctor(System.String,System.Exception)">
+            <summary>Creates a new TesseractException.</summary>
+            <param name="msg">the detail message.</param>
+            <param name="e">
+            the cause
+            (which is saved for later retrieval
+            by
+            <see cref="P:System.Exception.InnerException"/>
+            method).
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.Tesseract4OcrException.#ctor(System.String)">
+            <summary>Creates a new TesseractException.</summary>
+            <param name="msg">the detail message.</param>
+        </member>
+        <member name="T:iText.Pdfocr.Tesseract4.TesseractHelper">
+            <summary>Helper class.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.TesseractHelper.LOGGER">
+            <summary>The logger.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.TesseractHelper.BBOX_PATTERN">
+            <summary>Patterns for matching hOCR element bboxes.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.TesseractHelper.BBOX_ARRAY_SIZE">
+            <summary>Size of the array containing bbox.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.TesseractHelper.LEFT_IDX">
+            <summary>Indices in array representing bbox.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.TesseractHelper.PX_TO_PT">
+            <summary>The Constant to convert pixels to points.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.#ctor">
+            <summary>
+            Creates a new
+            <see cref="T:iText.Pdfocr.Tesseract4.TesseractHelper"/>
+            instance.
+            </summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.ParseHocrFile(System.Collections.Generic.IList{System.IO.FileInfo},iText.Pdfocr.Tesseract4.TextPositioning)">
+            <summary>
+            Parses each hocr file from the provided list, retrieves text, and
+            returns data in the format described below.
+            </summary>
+            <param name="inputFiles">list of input files</param>
+            <param name="textPositioning">
+            
+            <see cref="T:iText.Pdfocr.Tesseract4.TextPositioning"/>
+            </param>
+            <returns>
+            
+            <see cref="!:System.Collections.IDictionary&lt;K, V&gt;"/>
+            where key is
+            <see cref="!:int?"/>
+            representing the number of the page and value is
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of
+            <see cref="T:iText.Pdfocr.TextInfo"/>
+            elements where each
+            <see cref="T:iText.Pdfocr.TextInfo"/>
+            element contains a word or a line and its 4
+            coordinates(bbox)
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.ParseHocrFile(System.Collections.Generic.IList{System.IO.FileInfo},System.Collections.Generic.IList{System.IO.FileInfo},iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties)">
+            <summary>
+            Parses each hocr file from the provided list, retrieves text, and
+            returns data in the format described below.
+            </summary>
+            <param name="inputFiles">list of input files</param>
+            <param name="txtInputFiles">
+            list of input files in txt format used to make hocr recognition result more precise.
+            This is needed for cases of Thai language or some Chinese dialects
+            where every character is interpreted as a single word.
+            For more information see https://github.com/tesseract-ocr/tesseract/issues/2702
+            </param>
+            <param name="tesseract4OcrEngineProperties">
+            
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties"/>
+            </param>
+            <returns>
+            
+            <see cref="!:System.Collections.IDictionary&lt;K, V&gt;"/>
+            where key is
+            <see cref="!:int?"/>
+            representing the number of the page and value is
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of
+            <see cref="T:iText.Pdfocr.TextInfo"/>
+            elements where each
+            <see cref="T:iText.Pdfocr.TextInfo"/>
+            element contains a word or a line and its 4
+            coordinates(bbox)
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.GetAlignedBBox(iText.StyledXmlParser.Jsoup.Nodes.Element,iText.Pdfocr.Tesseract4.TextPositioning,iText.Kernel.Geom.Rectangle,System.Collections.Generic.IDictionary{System.String,iText.StyledXmlParser.Jsoup.Nodes.Node})">
+            <summary>Get and align (if needed) bbox of the element.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.ParseBBox(iText.StyledXmlParser.Jsoup.Nodes.Node,iText.Kernel.Geom.Rectangle,System.Collections.Generic.IDictionary{System.String,iText.StyledXmlParser.Jsoup.Nodes.Node})">
+            <summary>Parses element bbox.</summary>
+            <param name="node">element containing bbox</param>
+            <param name="pageBBox">element containing parent page bbox</param>
+            <param name="unparsedBBoxes">list of element ids with bboxes which could not be parsed</param>
+            <returns>parsed bbox</returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.DetectAndFixBrokenBBoxes(iText.StyledXmlParser.Jsoup.Nodes.Element,iText.Kernel.Geom.Rectangle,iText.Kernel.Geom.Rectangle,iText.Kernel.Geom.Rectangle,System.Collections.Generic.IDictionary{System.String,iText.StyledXmlParser.Jsoup.Nodes.Node})">
+            <summary>Sometimes hOCR file contains broke character bboxes which are equal to page bbox.</summary>
+            <remarks>
+            Sometimes hOCR file contains broke character bboxes which are equal to page bbox.
+            This method attempts to detect and fix them.
+            </remarks>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.ToPixels(System.Single)">
+            <summary>Converts points to pixels.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.ToPoints(System.Single)">
+            <summary>Converts pixels to points.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.DeleteFile(System.String)">
+            <summary>Deletes file using provided path.</summary>
+            <param name="pathToFile">path to the file to be deleted</param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.ReadTxtFile(System.IO.FileInfo)">
+            <summary>Reads from text file to string.</summary>
+            <param name="txtFile">
+            input
+            <see cref="T:System.IO.FileInfo"/>
+            to be read
+            </param>
+            <returns>
+            result
+            <see cref="T:System.String"/>
+            from provided text file
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.WriteToTextFile(System.String,System.String)">
+            <summary>
+            Writes provided
+            <see cref="T:System.String"/>
+            to text file using
+            provided path.
+            </summary>
+            <param name="path">
+            path as
+            <see cref="T:System.String"/>
+            to file to be created
+            </param>
+            <param name="data">
+            text data in required format as
+            <see cref="T:System.String"/>
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.RunCommand(System.String,System.Collections.Generic.IList{System.String})">
+            <summary>Runs given command.</summary>
+            <param name="execPath">path to the executable</param>
+            <param name="paramsList">
+            
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of command line arguments
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.RunCommand(System.String,System.Collections.Generic.IList{System.String},System.String)">
+            <summary>Runs given command from the specific working directory.</summary>
+            <param name="execPath">path to the executable</param>
+            <param name="paramsList">
+            
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of command line arguments
+            </param>
+            <param name="workingDirPath">path to the working directory</param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.GetTextData(iText.StyledXmlParser.Jsoup.Nodes.Element,iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties,System.Collections.Generic.IList{System.String},System.Collections.Generic.IDictionary{System.String,iText.StyledXmlParser.Jsoup.Nodes.Node})">
+            <summary>Gets list of text infos from hocr page.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.GetTextData(System.Collections.Generic.IList{iText.StyledXmlParser.Jsoup.Nodes.Element},iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties,System.Collections.Generic.IList{System.String},iText.Kernel.Geom.Rectangle,System.Collections.Generic.IDictionary{System.String,iText.StyledXmlParser.Jsoup.Nodes.Node})">
+            <summary>Gets list of text infos from elements within hocr page.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.IsElementConfident(iText.StyledXmlParser.Jsoup.Nodes.Element,System.Int32)">
+            <summary>
+            Decides if <c>lineOrCaption</c> is confident or not given into account
+            minimalConfidenceLevel property of
+            <see cref="T:iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties"/>.
+            </summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.GetTextDataForWords(iText.StyledXmlParser.Jsoup.Nodes.Element,System.String,iText.Pdfocr.Tesseract4.TextPositioning,iText.Kernel.Geom.Rectangle,System.Collections.Generic.IDictionary{System.String,iText.StyledXmlParser.Jsoup.Nodes.Node})">
+            <summary>Gets list of words represented by text infos from hocr line.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.GetTextDataForLines(iText.StyledXmlParser.Jsoup.Nodes.Element,System.String,iText.Kernel.Geom.Rectangle,System.Collections.Generic.IDictionary{System.String,iText.StyledXmlParser.Jsoup.Nodes.Node})">
+            <summary>Gets list of lines represented by text infos from hocr line.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.AddToTextData(System.Collections.Generic.IList{iText.Pdfocr.TextInfo},System.String,iText.Kernel.Geom.Rectangle,iText.Kernel.Geom.Rectangle)">
+            <summary>Add text chunk represented by text and bbox to list of text infos.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.AddToTextData(System.Collections.Generic.IList{iText.Pdfocr.TextInfo},iText.Pdfocr.TextInfo,iText.Kernel.Geom.Rectangle)">
+            <summary>Add text chunk represented by text info to list of text infos.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.GetTextInfosText(System.Collections.Generic.IList{iText.Pdfocr.TextInfo})">
+            <summary>Gets common text for list of text infos.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.MergeTextInfos(System.Collections.Generic.IList{iText.Pdfocr.TextInfo})">
+            <summary>Merges text infos.</summary>
+            <param name="textInfos">source to merge</param>
+            <returns>merged text info</returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractHelper.FindHocrLineInTxt(iText.StyledXmlParser.Jsoup.Nodes.Element,System.Collections.Generic.IList{System.String})">
+            <summary>Attempts to find HOCR line text in provided TXT.</summary>
+            <returns>text line if found, otherwise null</returns>
+        </member>
+        <member name="T:iText.Pdfocr.Tesseract4.TesseractOcrUtil">
+            <summary>
+            Utilities class to work with tesseract command line tool and image
+            preprocessing using
+            <see cref="!:Net.Sourceforge.Lept4j.ILeptonica"/>.
+            </summary>
+            <remarks>
+            Utilities class to work with tesseract command line tool and image
+            preprocessing using
+            <see cref="!:Net.Sourceforge.Lept4j.ILeptonica"/>.
+            These all methods have to be ported to .Net manually.
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.TesseractOcrUtil.ROTATION_0">
+            <summary>Rotation constants.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.TesseractOcrUtil.imagePages">
+            <summary>List of pages of the image that is being processed.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.#ctor">
+            <summary>
+            Creates a new
+            <see cref="T:iText.Pdfocr.Tesseract4.TesseractOcrUtil"/>
+            instance.
+            </summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.ReadPixPageFromTiff(System.IO.FileInfo,System.Int32)">
+            <summary>
+            Reads required page from provided tiff image.
+            Note that rotation is always applied when image read.
+            </summary>
+            <param name="inputFile">
+            input image as
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <param name="pageNumber">number of page</param>
+            <returns>
+            result
+            <see cref="T:Tesseract.Pix"/>
+            object created from
+            given image
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.PreprocessPix(Tesseract.Pix,iText.Pdfocr.Tesseract4.ImagePreprocessingOptions)">
+            <summary>Performs default image preprocessing.</summary>
+            <remarks>
+            Performs default image preprocessing.
+            It includes the following actions:
+            removing alpha channel,
+            converting to grayscale,
+            thresholding.
+            </remarks>
+            <param name="pix">
+            
+            <see cref="T:Tesseract.Pix"/>
+            object to be processed
+            </param>
+            <param name="imagePreprocessingOptions">
+            
+            <see cref="T:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions"/>
+            </param>
+            <returns>
+            preprocessed
+            <see cref="T:Tesseract.Pix"/>
+            object
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.ConvertToGrayscale(Tesseract.Pix)">
+            <summary>
+            Converts Leptonica
+            <see cref="T:Tesseract.Pix"/>
+            to grayscale.
+            </summary>
+            <remarks>
+             In .Net image is converted only if this is 32bpp image. In java image is
+             converted anyway using different Leptonica methods depending on
+             image depth.
+            </remarks>
+            <param name="pix">
+            
+            <see cref="T:Tesseract.Pix"/>
+            object to be processed
+            </param>
+            <returns>
+            preprocessed
+            <see cref="T:Tesseract.Pix"/>
+            object
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.OtsuImageThresholding(Tesseract.Pix,iText.Pdfocr.Tesseract4.ImagePreprocessingOptions)">
+            <summary>
+            Performs Leptonica Otsu adaptive image thresholding using
+            <see cref="!:Net.Sourceforge.Lept4j.Leptonica.PixOtsuAdaptiveThreshold(Tesseract.Pix, int, int, int, int, float, Com.Sun.Jna.Ptr.PointerByReference, Com.Sun.Jna.Ptr.PointerByReference)"/>
+            method.
+            </summary>
+            <param name="pix">
+            
+            <see cref="T:Tesseract.Pix"/>
+            object to be processed
+            </param>
+            <param name="imagePreprocessingOptions">
+            
+            <see cref="T:iText.Pdfocr.Tesseract4.ImagePreprocessingOptions"/>
+            </param>
+            <returns>
+            
+            <see cref="T:Tesseract.Pix"/>
+            object after thresholding
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.GetOtsuAdaptiveThresholdTileSize(System.Int32,System.Int32)">
+            <summary>
+            Gets adaptive threshold tile size.
+            </summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.GetOtsuAdaptiveThresholdSmoothingTileSize(System.Int32,System.Boolean)">
+            <summary>
+            Gets adaptive threshold smoothing tile size.
+            Can be either equal to page size or 0.
+            </summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.GetImagePixelColor(System.Drawing.Bitmap,System.Int32,System.Int32)">
+            <summary>
+            Gets an integer pixel in the default RGB color model.
+            </summary>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.DestroyPix(Tesseract.Pix)">
+            <summary>
+            Destroys
+            <see cref="T:Tesseract.Pix"/>
+            object.
+            </summary>
+            <param name="pix">
+            
+            <see cref="T:Tesseract.Pix"/>
+            object to be destroyed
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.SetTesseractProperties(Tesseract.TesseractEngine,System.String,System.String,System.Nullable{System.Int32},System.String)">
+            <summary>Sets tesseract properties.</summary>
+            <remarks>
+            Sets tesseract properties.
+            The following properties are set in this method:
+            In java: path to tess data, languages, psm
+            In .Net: psm
+            This means that other properties have been set during the
+            initialization of tesseract instance previously or tesseract library
+            doesn't provide such possibilities in api for .Net or java.
+            </remarks>
+            <param name="tesseractInstance">
+            
+            <see cref="T:Tesseract.TesseractEngine"/>
+            object
+            </param>
+            <param name="tessData">path to tess data directory</param>
+            <param name="languages">
+            list of languages in required format
+            as
+            <see cref="T:System.String"/>
+            </param>
+            <param name="pageSegMode">
+            page segmentation mode
+            <see cref="!:int?"/>
+            </param>
+            <param name="userWordsFilePath">path to a temporary file with user words</param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.InitializeTesseractInstance(System.Boolean,System.String,System.String,System.String)">
+            <summary>Creates tesseract instance with parameters.</summary>
+            <remarks>
+            Creates tesseract instance with parameters.
+            Method is used to initialize tesseract instance with parameters if it
+            haven't been initialized yet.
+            In this method in java 'tessData', 'languages' and 'userWordsFilePath'
+            properties are unused as they will be set using setters in
+            <see cref="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.SetTesseractProperties(Tesseract.TesseractEngine,System.String,System.String,System.Nullable{System.Int32},System.String)"/> method. In .Net all these properties
+            are needed to be provided in tesseract constructor in order to
+            initialize tesseract instance.Thus, tesseract initialization takes
+            place in <see cref="M:iText.Pdfocr.Tesseract4.Tesseract4LibOcrEngine.#ctor(iText.Pdfocr.Tesseract4.Tesseract4OcrEngineProperties)"/> constructor in
+            java, but in .Net it happens only after all properties are validated,
+            i.e. just before OCR process.
+            </remarks>
+            <param name="tessData">path to tess data directory</param>
+            <param name="languages">
+            list of languages in required format as
+            <see cref="T:System.String"/>
+            </param>
+            <param name="isWindows">true is current os is windows</param>
+            <param name="userWordsFilePath">path to a temporary file with user words</param>
+            <returns>
+            initialized
+            <see cref="T:Tesseract.TesseractEngine"/>
+            object
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.IsTesseractInstanceDisposed(Tesseract.TesseractEngine)">
+            <summary>Returns true if tesseract instance has been already disposed.</summary>
+            <remarks>
+            Returns true if tesseract instance has been already disposed.
+            (used in .net version)
+            </remarks>
+            <param name="tesseractInstance">
+            
+            <see cref="T:Tesseract.TesseractEngine"/>
+            object to check
+            </param>
+            <returns>true if tesseract instance is disposed.</returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.DisposeTesseractInstance(Tesseract.TesseractEngine)">
+            <summary>
+            Disposes
+            <see cref="T:Tesseract.TesseractEngine"/>
+            instance.
+            </summary>
+            <remarks>
+            Disposes
+            <see cref="T:Tesseract.TesseractEngine"/>
+            instance.
+            (used in .net version)
+            </remarks>
+            <param name="tesseractInstance">
+            
+            <see cref="T:Tesseract.TesseractEngine"/>
+            object to dispose
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.ConvertPixToImage(Tesseract.Pix)">
+            <summary>
+            Converts Leptonica
+            <see cref="T:Tesseract.Pix"/>
+            to
+            <see cref="T:System.Drawing.Bitmap"/>
+            with
+            <see cref="!:Net.Sourceforge.Lept4j.ILeptonica.IFF_PNG"/>
+            image format.
+            </summary>
+            <param name="pix">
+            input
+            <see cref="T:Tesseract.Pix"/>
+            object
+            </param>
+            <returns>
+            result
+            <see cref="T:System.Drawing.Bitmap"/>
+            object
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.GetTempFilePath(System.String,System.String)">
+            <summary>Gets current system temporary directory.</summary>
+            <param name="name">file name</param>
+            <param name="suffix">file suffix</param>
+            <returns>path to system temporary directory</returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.GetParentDirectory(System.String)">
+            <summary>Returns parent directory for the passed path.</summary>
+            <param name="path">path path to file</param>
+            <returns>parent directory where the file is located</returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.InitializeImagesListFromTiff(System.IO.FileInfo)">
+            <summary>
+            Retrieves list of pages from provided image as list of
+            <see cref="T:System.Drawing.Bitmap"/>
+            , one per page and updates
+            this list for the image using
+            <see cref="!:SetListOfPages(System.Collections.Generic.IList&lt;E&gt;)"/>
+            method.
+            </summary>
+            <param name="inputFile">
+            input image
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.GetImagePage(System.IO.FileInfo,System.Int32)">
+            <summary>
+            Gets requested image page from the provided image.
+            </summary>
+            <param name="inputFile">
+            input image
+            </param>
+            <param name="page">
+            requested image page
+            </param>
+            <returns>
+            requested image page as a
+            <see cref="T:System.Drawing.Bitmap"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.GetListOfPages">
+            <summary>
+            Gets list of page of processing image as list of
+            <see cref="T:System.Drawing.Bitmap"/>
+            , one per page.
+            </summary>
+            <returns>
+            result
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of pages
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.SetListOfPages(System.Collections.Generic.IList{System.Drawing.Bitmap})">
+            <summary>
+            Sets list of page of processing image as list of
+            <see cref="T:System.Drawing.Bitmap"/>
+            , one per page.
+            </summary>
+            <param name="listOfPages">
+            list of
+            <see cref="T:System.Drawing.Bitmap"/>
+            for
+            each page.
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.GetOcrResultAsString(Tesseract.TesseractEngine,System.Drawing.Bitmap,iText.Pdfocr.Tesseract4.OutputFormat)">
+            <summary>
+            Performs ocr for the provided image
+            and returns result as string in required format.
+            </summary>
+            <remarks>
+            Performs ocr for the provided image
+            and returns result as string in required format.
+            (
+            <see cref="T:iText.Pdfocr.Tesseract4.OutputFormat"/>
+            is used in .Net version,
+            in java output format should already be set)
+            </remarks>
+            <param name="tesseractInstance">
+            
+            <see cref="T:Tesseract.TesseractEngine"/>
+            object to perform OCR
+            </param>
+            <param name="image">
+            input
+            <see cref="T:System.Drawing.Bitmap"/>
+            to be processed
+            </param>
+            <param name="outputFormat">
+            selected
+            <see cref="T:iText.Pdfocr.Tesseract4.OutputFormat"/>
+            for tesseract
+            </param>
+            <returns>
+            result as
+            <see cref="T:System.String"/>
+            in required format
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.GetOcrResultAsString(Tesseract.TesseractEngine,System.IO.FileInfo,iText.Pdfocr.Tesseract4.OutputFormat)">
+            <summary>
+            Performs ocr for the provided image
+            and returns result as string in required format.
+            </summary>
+            <remarks>
+            Performs ocr for the provided image
+            and returns result as string in required format.
+            (
+            <see cref="T:iText.Pdfocr.Tesseract4.OutputFormat"/>
+            is used in .Net version, in java output format
+            should already be set)
+            </remarks>
+            <param name="tesseractInstance">
+            
+            <see cref="T:Tesseract.TesseractEngine"/>
+            object to perform OCR
+            </param>
+            <param name="image">
+            input image as
+            <see cref="T:System.IO.FileInfo"/>
+            to be
+            processed
+            </param>
+            <param name="outputFormat">
+            selected
+            <see cref="T:iText.Pdfocr.Tesseract4.OutputFormat"/>
+            for tesseract
+            </param>
+            <returns>
+            result as
+            <see cref="T:System.String"/>
+            in required format
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.GetOcrResultAsString(Tesseract.TesseractEngine,Tesseract.Pix,iText.Pdfocr.Tesseract4.OutputFormat)">
+            <summary>
+            Performs ocr for the provided image
+            and returns result as string in required format.
+            </summary>
+            <remarks>
+            Performs ocr for the provided image
+            and returns result as string in required format.
+            (
+            <see cref="T:iText.Pdfocr.Tesseract4.OutputFormat"/>
+            is used in .Net version, in java output format
+            should already be set)
+            </remarks>
+            <param name="tesseractInstance">
+            
+            <see cref="T:Tesseract.TesseractEngine"/>
+            object to perform OCR
+            </param>
+            <param name="pix">
+            input image as
+            <see cref="T:Tesseract.Pix"/>
+            to be
+            processed
+            </param>
+            <param name="outputFormat">
+            selected
+            <see cref="T:iText.Pdfocr.Tesseract4.OutputFormat"/>
+            for tesseract
+            </param>
+            <returns>
+            result as
+            <see cref="T:System.String"/>
+            in required format
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.SaveImageToTempPngFile(System.String,System.Drawing.Bitmap)">
+            <summary>
+            Saves passed <see cref="T:System.Drawing.Bitmap"/> to given path
+            </summary>
+            <param name="tmpFileName">
+            provided file path to save the <see cref="T:System.Drawing.Bitmap"/>
+            </param>
+            <param name="image">
+            provided <see cref="T:System.Drawing.Bitmap"/> to be saved
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.SavePixToPngFile(System.String,Tesseract.Pix)">
+            <summary>
+            Saves passed<see cref="T:Tesseract.Pix"/> to given path
+            </summary>
+            <param name="filename">
+            provided file path to save the <see cref="T:Tesseract.Pix"/>
+            </param>
+            <param name="pix">
+            provided <see cref="T:Tesseract.Pix"/> to be saved
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.CreateTempFileCopy(System.String,System.String)">
+            <summary>
+            Create temporary copy of input file to avoid
+            issue with tesseract and different encodings
+            in the path.
+            </summary>
+            <param name="src">
+            path to the source image
+            </param>
+            <param name="dst">
+            path to the source image
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.ReadPix(System.Drawing.Bitmap)">
+            <summary>
+            Read
+            <see cref="T:Tesseract.Pix"/>
+            from 
+            <see cref="T:System.Drawing.Bitmap"/>.
+            Note that rotation is always applied when image read.
+            </summary>
+            <param name="bufferedImage">
+            image
+            <see cref="T:System.Drawing.Bitmap"/>
+            to read from
+            </param>
+            <returns>
+            Pix result
+            <see cref="T:Tesseract.Pix"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.ReadPix(System.IO.FileInfo)">
+            <summary>
+            Read
+            <see cref="T:Tesseract.Pix"/>
+            from 
+            <see cref="T:System.IO.FileInfo"/>.
+            Note that rotation is always applied when image read.
+            </summary>
+            <param name="inputFile">
+            input file
+            <see cref="T:System.IO.FileInfo"/>
+            to read from
+            </param>
+            <returns>
+            Pix result
+            <see cref="T:Tesseract.Pix"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.ReadPix(System.Byte[])">
+            <summary>
+            Read
+            <see cref="T:Tesseract.Pix"/>
+            from byte array.
+            Note that rotation is always applied when image read.
+            </summary>
+            <param name="imageBytes">
+            image bytes to read from
+            </param>
+            <returns>
+            Pix result
+            <see cref="T:Tesseract.Pix"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.DetectRotation(System.IO.FileInfo)">
+            <summary>
+            Detect rotation specified by image metadata.
+            </summary>
+            <param name="inputFile">
+            file to detect rotation
+            </param>
+            <returns>
+            image rotation as specified in metadata
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.DetectRotation(iText.IO.Image.ImageData)">
+            <summary>
+            Detect rotation specified by image metadata.
+            </summary>
+            <param name="imageData">
+            imageData to detect rotation
+            </param>
+            <returns>
+            image rotation as specified in metadata
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.DetectRotation(System.Byte[])">
+            <summary>
+            Detect rotation specified by image metadata.
+            </summary>
+            <param name="imageBytes">
+            image data to detect rotation
+            </param>
+            <returns>
+            image rotation as specified in metadata
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.ReadRotationFromMetadata(System.Drawing.Image)">
+            <summary>
+            Reads image orientation from metadata and converts to rotation.
+            </summary>
+            <param name="image">
+            image metadata
+            </param>
+            <returns>
+            rotation
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.Rotate(Tesseract.Pix,System.Int32)">
+            <summary>
+            Rotates image by specified angle.
+            </summary>
+            <param name="pix">
+            image source represented by
+            <see cref="T:Tesseract.Pix"/>
+            </param>
+            <param name="rotation">
+            to rotate image at
+            </param>
+            <returns>
+            rotated image, if rotation differs from 0
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.Tesseract4.TesseractOcrUtil.ApplyRotation(iText.IO.Image.ImageData)">
+            <summary>
+            Detects and applies rotation to image.
+            </summary>
+            <param name="imageData">
+            source image to rotate if needed
+            </param>
+            <returns>
+            rotated image, if rotation differs from 0
+            </returns>
+        </member>
+        <member name="T:iText.Pdfocr.Tesseract4.TextPositioning">
+            <summary>Enumeration of the possible types of text positioning.</summary>
+            <remarks>
+            Enumeration of the possible types of text positioning.
+            It is used when there is possibility in selected Reader to process
+            the text by lines or by words and to return coordinates for the
+            selected type of item.
+            For tesseract this value makes sense only if selected
+            <see cref="T:iText.Pdfocr.Tesseract4.OutputFormat"/>
+            is
+            <see cref="F:iText.Pdfocr.Tesseract4.OutputFormat.HOCR"/>.
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.TextPositioning.BY_LINES">
+            <summary>Text will be located by lines retrieved from hocr file.</summary>
+            <remarks>
+            Text will be located by lines retrieved from hocr file.
+            (default value)
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.TextPositioning.BY_WORDS">
+            <summary>Text will be located by words retrieved from hocr file.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.Tesseract4.TextPositioning.BY_WORDS_AND_LINES">
+            <summary>Similar to BY_WORDS mode, but top and bottom of word BBox are inherited from line.</summary>
+        </member>
+    </members>
+</doc>

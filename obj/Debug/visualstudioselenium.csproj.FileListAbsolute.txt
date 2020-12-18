@@ -1,0 +1,675 @@
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/visualstudioselenium.exe
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/visualstudioselenium.pdb
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/WebDriver.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/WebDriver.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/obj/Debug/visualstudioselenium.csprojAssemblyReference.cache
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/obj/Debug/visualstudioselenium.csproj.CoreCompileInputs.cache
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/obj/Debug/visualstudioselenium.csproj.CopyComplete
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/obj/Debug/visualstudioselenium.exe
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/obj/Debug/visualstudioselenium.pdb
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/visualstudioselenium.exe.config
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Crc32C.NET.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/DnsClient.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/ExtentReports.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Authentication.Abstractions.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Authentication.Core.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Connections.Abstractions.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Diagnostics.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.HostFiltering.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Hosting.Abstractions.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Hosting.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Html.Abstractions.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Http.Abstractions.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Http.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Http.Extensions.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Http.Features.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.HttpOverrides.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Razor.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Razor.Language.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Razor.Runtime.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Routing.Abstractions.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Routing.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.IIS.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.IISIntegration.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.Kestrel.Core.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.Kestrel.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.Kestrel.Https.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.WebUtilities.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.CodeAnalysis.CSharp.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.CodeAnalysis.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.Binder.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.CommandLine.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.FileExtensions.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.Json.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.UserSecrets.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.DependencyInjection.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.FileProviders.Abstractions.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.FileProviders.Physical.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.FileSystemGlobbing.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Hosting.Abstractions.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.Configuration.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.Console.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.Debug.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.EventSource.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.ObjectPool.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Options.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Primitives.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Net.Http.Headers.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/MongoDB.Bson.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/MongoDB.Driver.Core.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/MongoDB.Driver.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/MongoDB.Libmongocrypt.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Newtonsoft.Json.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/RazorEngine.NetCore.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/SharpCompress.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Snappy.NET.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.AppContext.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Buffers.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Collections.Immutable.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.ComponentModel.Annotations.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Console.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Diagnostics.DiagnosticSource.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Diagnostics.FileVersionInfo.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Diagnostics.StackTrace.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.IO.Compression.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.IO.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.IO.FileSystem.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.IO.FileSystem.Primitives.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.IO.Pipelines.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Linq.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Linq.Expressions.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Memory.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Numerics.Vectors.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Reflection.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Reflection.Metadata.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Runtime.CompilerServices.Unsafe.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Runtime.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Runtime.Extensions.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Runtime.InteropServices.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Runtime.InteropServices.RuntimeInformation.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Security.AccessControl.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Security.Cryptography.Algorithms.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Security.Cryptography.Cng.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Security.Cryptography.Encoding.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Security.Cryptography.Primitives.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Security.Cryptography.X509Certificates.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Security.Permissions.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Security.Principal.Windows.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Text.Encoding.CodePages.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Text.Encodings.Web.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Threading.Tasks.Extensions.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Threading.Thread.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.ValueTuple.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Xml.ReaderWriter.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Xml.XmlDocument.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Xml.XPath.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Xml.XPath.XDocument.dll
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Crc32C.NET.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Diagnostics.Abstractions.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Razor.Language.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.DependencyInjection.Abstractions.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.DependencyInjection.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.FileSystemGlobbing.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.Abstractions.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.ObjectPool.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/MongoDB.Bson.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Newtonsoft.Json.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Snappy.NET.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Buffers.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/DnsClient.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Collections.Immutable.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Diagnostics.DiagnosticSource.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Numerics.Vectors.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Reflection.Metadata.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Runtime.CompilerServices.Unsafe.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Memory.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Primitives.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Http.Features.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.Abstractions.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.Binder.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.CommandLine.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.EnvironmentVariables.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.FileProviders.Abstractions.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.FileProviders.Physical.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.FileExtensions.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.Json.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.UserSecrets.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Hosting.Abstractions.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Options.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.Debug.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.EventSource.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Options.ConfigurationExtensions.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.Configuration.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.Console.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.Net.Http.Headers.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/MongoDB.Driver.Core.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/MongoDB.Driver.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Text.Encodings.Web.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Html.Abstractions.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Http.Abstractions.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Authentication.Abstractions.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Hosting.Abstractions.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Http.Extensions.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.HttpOverrides.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Razor.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Razor.Runtime.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Routing.Abstractions.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Routing.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.WebUtilities.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Diagnostics.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Http.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Authentication.Core.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.HostFiltering.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Hosting.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.Threading.Tasks.Extensions.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/System.IO.Pipelines.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Connections.Abstractions.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.IIS.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.IISIntegration.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.Kestrel.Core.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.Kestrel.Https.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.Kestrel.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.CodeAnalysis.pdb
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.CodeAnalysis.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.CodeAnalysis.CSharp.pdb
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/bin/Debug/Microsoft.CodeAnalysis.CSharp.xml
+/Users/claudioperez/Downloads/visualstudioselenium-master/visualstudioselenium/obj/Debug/visualstudioselenium.exe.config
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/x86/liblept1760.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/x86/libtesseract400.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/x64/liblept1760.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/x64/libtesseract400.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/visualstudioselenium.exe.config
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/visualstudioselenium.exe
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/visualstudioselenium.pdb
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/BouncyCastle.Crypto.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Common.Logging.Core.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Common.Logging.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Crc32C.NET.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/cs-pdf-to-image.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Dianoga.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Dianoga.ImageMagick.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/DnsClient.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/ExtentReports.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/GhostscriptSharp.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.barcodes.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.forms.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.io.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.kernel.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.layout.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.pdfa.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.pdfocr.api.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.pdfocr.tesseract4.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.sign.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.styledxmlparser.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.svg.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Magick.NET-Q16-AnyCPU.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Magick.NET.Core.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Authentication.Abstractions.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Authentication.Core.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Connections.Abstractions.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Diagnostics.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.HostFiltering.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Hosting.Abstractions.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Hosting.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Html.Abstractions.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Http.Abstractions.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Http.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Http.Extensions.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Http.Features.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.HttpOverrides.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Razor.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Razor.Language.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Razor.Runtime.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Routing.Abstractions.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Routing.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.IIS.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.IISIntegration.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.Kestrel.Core.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.Kestrel.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.Kestrel.Https.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.WebUtilities.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.CodeAnalysis.CSharp.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.CodeAnalysis.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.Binder.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.CommandLine.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.FileExtensions.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.Json.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.UserSecrets.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.DependencyInjection.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.FileProviders.Abstractions.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.FileProviders.Physical.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.FileSystemGlobbing.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Hosting.Abstractions.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.Configuration.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.Console.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.Debug.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.EventSource.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.ObjectPool.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Options.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Primitives.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Net.Http.Headers.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/MongoDB.Bson.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/MongoDB.Driver.Core.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/MongoDB.Driver.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/MongoDB.Libmongocrypt.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Newtonsoft.Json.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/nQuant.Core.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/RazorEngine.NetCore.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/SharpCompress.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Snappy.NET.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.AppContext.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Buffers.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Collections.Immutable.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.ComponentModel.Annotations.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Console.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Diagnostics.DiagnosticSource.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Diagnostics.FileVersionInfo.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Diagnostics.StackTrace.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.IO.Compression.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.IO.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.IO.FileSystem.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.IO.FileSystem.Primitives.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.IO.Pipelines.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Linq.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Linq.Expressions.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Memory.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Numerics.Vectors.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Reflection.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Reflection.Metadata.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Runtime.CompilerServices.Unsafe.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Runtime.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Runtime.Extensions.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Runtime.InteropServices.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Runtime.InteropServices.RuntimeInformation.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Security.AccessControl.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Security.Cryptography.Algorithms.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Security.Cryptography.Cng.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Security.Cryptography.Encoding.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Security.Cryptography.Primitives.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Security.Cryptography.X509Certificates.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Security.Permissions.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Security.Principal.Windows.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Text.Encoding.CodePages.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Text.Encodings.Web.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Threading.Tasks.Extensions.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Threading.Thread.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.ValueTuple.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Xml.ReaderWriter.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Xml.XmlDocument.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Xml.XPath.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Xml.XPath.XDocument.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Tesseract.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/WebDriver.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/WnvPdfToText.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/WebDriver.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Crc32C.NET.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Diagnostics.Abstractions.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Razor.Language.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.DependencyInjection.Abstractions.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.DependencyInjection.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.FileSystemGlobbing.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.Abstractions.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.ObjectPool.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/MongoDB.Bson.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Newtonsoft.Json.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Snappy.NET.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Buffers.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/DnsClient.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Collections.Immutable.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Diagnostics.DiagnosticSource.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Numerics.Vectors.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Reflection.Metadata.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Runtime.CompilerServices.Unsafe.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Memory.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Primitives.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Http.Features.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.Abstractions.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.Binder.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.CommandLine.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.EnvironmentVariables.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.FileProviders.Abstractions.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.FileProviders.Physical.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.FileExtensions.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.Json.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Configuration.UserSecrets.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Hosting.Abstractions.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Options.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.Debug.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.EventSource.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Options.ConfigurationExtensions.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.Configuration.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Extensions.Logging.Console.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.Net.Http.Headers.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/MongoDB.Driver.Core.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/MongoDB.Driver.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Text.Encodings.Web.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Html.Abstractions.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Http.Abstractions.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Authentication.Abstractions.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Hosting.Abstractions.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Http.Extensions.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.HttpOverrides.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Razor.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Razor.Runtime.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Routing.Abstractions.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Routing.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.WebUtilities.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Diagnostics.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Http.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Authentication.Core.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.HostFiltering.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Hosting.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.Threading.Tasks.Extensions.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/System.IO.Pipelines.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Connections.Abstractions.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.IIS.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.IISIntegration.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.Kestrel.Core.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.Kestrel.Https.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.Server.Kestrel.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.AspNetCore.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.CodeAnalysis.pdb
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.CodeAnalysis.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.CodeAnalysis.CSharp.pdb
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Microsoft.CodeAnalysis.CSharp.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/WnvPdfToText.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Common.Logging.Core.pdb
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Common.Logging.Core.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Common.Logging.pdb
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Common.Logging.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/BouncyCastle.Crypto.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.barcodes.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.forms.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.io.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.kernel.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.layout.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.pdfa.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.sign.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.styledxmlparser.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.svg.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.pdfocr.api.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/itext.pdfocr.tesseract4.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Magick.NET.Core.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Magick.NET-Q16-AnyCPU.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/nQuant.Core.pdb
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/obj/Debug/visualstudioselenium.exe.config
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/obj/Debug/visualstudioselenium.csproj.CoreCompileInputs.cache
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/obj/Debug/visualstudioselenium.csproj.CopyComplete
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/obj/Debug/visualstudioselenium.exe
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/obj/Debug/visualstudioselenium.pdb
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Ghostscript.NET.dll
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/bin/Debug/Ghostscript.NET.xml
+/Users/claudioperez/Documents/programacion/legalRobot/visualstudioselenium/obj/Debug/visualstudioselenium.csprojAssemblyReference.cache
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\x86\sqlite3.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\x64\sqlite3.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\mongocrypt.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\x86\liblept1760.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\x86\libtesseract400.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\x64\liblept1760.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\x64\libtesseract400.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\visualstudioselenium.exe.config
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\visualstudioselenium.exe.manifest
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\visualstudioselenium.application
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\visualstudioselenium.exe
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\visualstudioselenium.pdb
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Common.Logging.Core.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Common.Logging.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Crc32C.NET.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\DnsClient.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\ExtentReports.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\GrapeCity.Documents.Common.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\GrapeCity.Documents.Imaging.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\GrapeCity.Documents.Pdf.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.barcodes.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.forms.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.io.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.kernel.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.layout.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.pdfa.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.pdfocr.api.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.pdfocr.tesseract4.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.sign.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.styledxmlparser.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.svg.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itextsharp.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\log4net.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Authentication.Core.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Diagnostics.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.HostFiltering.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Hosting.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Html.Abstractions.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Http.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.HttpOverrides.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Razor.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Razor.Runtime.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Routing.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Server.IIS.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Server.IISIntegration.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Https.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.CodeAnalysis.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Logging.Console.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Logging.EventSource.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Net.Http.Headers.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\MongoDB.Bson.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\MongoDB.Driver.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\MongoDB.Libmongocrypt.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\RazorEngine.NetCore.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\SharpCompress.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Snappy.NET.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Buffers.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Memory.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Reflection.Metadata.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Security.Cryptography.Cng.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Security.Permissions.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.ValueTuple.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Tesseract.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\WebDriver.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Common.Logging.pdb
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Common.Logging.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Common.Logging.Core.pdb
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Common.Logging.Core.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\GrapeCity.Documents.Common.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\GrapeCity.Documents.Imaging.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\GrapeCity.Documents.Pdf.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.barcodes.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.forms.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.io.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.kernel.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.layout.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.pdfa.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.pdfocr.api.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.pdfocr.tesseract4.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.sign.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.styledxmlparser.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itext.svg.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\itextsharp.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\log4net.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Security.Permissions.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.ValueTuple.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\WebDriver.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Crc32C.NET.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Diagnostics.Abstractions.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Razor.Language.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.ObjectPool.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\MongoDB.Bson.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Snappy.NET.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Buffers.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\DnsClient.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Reflection.Metadata.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Memory.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Configuration.CommandLine.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Configuration.EnvironmentVariables.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Configuration.UserSecrets.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Logging.Debug.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Logging.EventSource.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Options.ConfigurationExtensions.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Logging.Configuration.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Extensions.Logging.Console.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.Net.Http.Headers.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\MongoDB.Driver.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Html.Abstractions.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Http.Extensions.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.HttpOverrides.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Razor.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Razor.Runtime.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Routing.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.WebUtilities.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Diagnostics.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Http.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Authentication.Core.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.HostFiltering.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Hosting.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Connections.Abstractions.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Server.IIS.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Server.IISIntegration.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Core.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Https.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.Server.Kestrel.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.AspNetCore.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.CodeAnalysis.pdb
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.CodeAnalysis.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.CodeAnalysis.CSharp.pdb
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\Microsoft.CodeAnalysis.CSharp.xml
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\ja\GrapeCity.Documents.Common.resources.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\ja\GrapeCity.Documents.Imaging.resources.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\bin\Debug\ja\GrapeCity.Documents.Pdf.resources.dll
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\obj\Debug\visualstudioselenium.csproj.CoreCompileInputs.cache
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\obj\Debug\visualstudioselenium.exe.manifest
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\obj\Debug\visualstudioselenium.application
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\obj\Debug\visualstudioselenium.csproj.CopyComplete
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\obj\Debug\visualstudioselenium.exe
+C:\Users\Claudio Perez\Downloads\legalRobot-master\legalRobot-master\visualstudioselenium\obj\Debug\visualstudioselenium.pdb

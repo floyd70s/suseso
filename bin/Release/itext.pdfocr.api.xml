@@ -1,0 +1,1220 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>itext.pdfocr.api</name>
+    </assembly>
+    <members>
+        <member name="T:iText.Pdfocr.Events.IThreadLocalMetaInfoAware">
+            <summary>
+            The interface which holds a thread local meta info,
+            meaning different threads operate with independent and different meta infos.
+            </summary>
+        </member>
+        <member name="M:iText.Pdfocr.Events.IThreadLocalMetaInfoAware.GetThreadLocalMetaInfo">
+            <summary>Gets the meta info which is held by the interface.</summary>
+            <returns>the held thread local meta info</returns>
+        </member>
+        <member name="M:iText.Pdfocr.Events.IThreadLocalMetaInfoAware.SetThreadLocalMetaInfo(iText.Kernel.Counter.Event.IMetaInfo)">
+            <summary>Sets a thread local meta info.</summary>
+            <param name="metaInfo">a thread local meta info to be held</param>
+            <returns>
+            this
+            <see cref="T:iText.Pdfocr.Events.IThreadLocalMetaInfoAware"/>
+            </returns>
+        </member>
+        <member name="T:iText.Pdfocr.IImageRotationHandler">
+            <summary>Rotation information may be stored in image metadata.</summary>
+            <remarks>
+            Rotation information may be stored in image metadata.
+            For OCR and adding image to document that rotation
+            should be applied to the image, so that it is actually rotated,
+            not via metadata properties.
+            Interface ia responsible for extracting rotation from metadata
+            and applying in to the image.
+            </remarks>
+        </member>
+        <member name="M:iText.Pdfocr.IImageRotationHandler.ApplyRotation(iText.IO.Image.ImageData)">
+            <summary>Apply rotation to image data.</summary>
+            <remarks>
+            Apply rotation to image data.
+            If image is not rotated - does nothing.
+            </remarks>
+            <param name="imageData">to apply rotation to</param>
+            <returns>rotated image if rotation flag is set or self if no rotation</returns>
+        </member>
+        <member name="T:iText.Pdfocr.IMetaInfoWrapper">
+            <summary>The meta info wrapper that holds some meta info</summary>
+        </member>
+        <member name="M:iText.Pdfocr.IMetaInfoWrapper.GetWrappedMetaInfo">
+            <summary>Gets the wrapped meta info</summary>
+            <returns>the wrapped meta info</returns>
+        </member>
+        <member name="T:iText.Pdfocr.IOcrEngine">
+            <summary>
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>
+            interface is used for instantiating new OcrReader
+            objects.
+            </summary>
+            <remarks>
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>
+            interface is used for instantiating new OcrReader
+            objects.
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>
+            interface provides possibility to perform OCR,
+            to read data from input files and to return the contained text in the
+            required format.
+            </remarks>
+        </member>
+        <member name="M:iText.Pdfocr.IOcrEngine.DoImageOcr(System.IO.FileInfo)">
+            <summary>
+            Reads data from the provided input image file and returns retrieved data
+            in the format described below.
+            </summary>
+            <param name="input">
+            input image
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <returns>
+            
+            <see cref="!:System.Collections.IDictionary&lt;K, V&gt;"/>
+            where key is
+            <see cref="!:int?"/>
+            representing the number of the page and value is
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of
+            <see cref="T:iText.Pdfocr.TextInfo"/>
+            elements where each
+            <see cref="T:iText.Pdfocr.TextInfo"/>
+            element contains a word or a line and its 4
+            coordinates(bbox)
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.IOcrEngine.CreateTxtFile(System.Collections.Generic.IList{System.IO.FileInfo},System.IO.FileInfo)">
+            <summary>
+            Performs OCR using provided
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>
+            for the given list of
+            input images and saves output to a text file using provided path.
+            </summary>
+            <remarks>
+            Performs OCR using provided
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>
+            for the given list of
+            input images and saves output to a text file using provided path.
+            Note that a human reading order is not guaranteed
+            due to possible specifics of input images (multi column layout, tables etc)
+            </remarks>
+            <param name="inputImages">
+            
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of images to be OCRed
+            </param>
+            <param name="txtFile">file to be created</param>
+        </member>
+        <member name="F:iText.Pdfocr.OcrEngineProperties.languages">
+            <summary>List of languages required for ocr for provided images.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.OcrEngineProperties.#ctor">
+            <summary>
+            Creates a new
+            <see cref="T:iText.Pdfocr.OcrEngineProperties"/>
+            instance.
+            </summary>
+        </member>
+        <member name="M:iText.Pdfocr.OcrEngineProperties.#ctor(iText.Pdfocr.OcrEngineProperties)">
+            <summary>
+            Creates a new
+            <see cref="T:iText.Pdfocr.OcrEngineProperties"/>
+            instance
+            based on another
+            <see cref="T:iText.Pdfocr.OcrEngineProperties"/>
+            instance (copy
+            constructor).
+            </summary>
+            <param name="other">
+            the other
+            <see cref="T:iText.Pdfocr.OcrEngineProperties"/>
+            instance
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.OcrEngineProperties.GetLanguages">
+            <summary>Gets list of languages required for provided images.</summary>
+            <returns>
+            
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of languages
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrEngineProperties.SetLanguages(System.Collections.Generic.IList{System.String})">
+            <summary>Sets list of languages to be recognized in provided images.</summary>
+            <remarks>
+            Sets list of languages to be recognized in provided images.
+            Consult with documentation of specific engine implementations
+            to check on which format to give the language in.
+            </remarks>
+            <param name="requiredLanguages">
+            
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of languages in string
+            format
+            </param>
+            <returns>
+            the
+            <see cref="T:iText.Pdfocr.OcrEngineProperties"/>
+            instance
+            </returns>
+        </member>
+        <member name="T:iText.Pdfocr.OcrException">
+            <summary>Exception class for custom exceptions.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.OcrException.#ctor(System.String,System.Exception)">
+            <summary>Creates a new OcrException.</summary>
+            <param name="msg">the detail message.</param>
+            <param name="e">
+            the cause
+            (which is saved for later retrieval
+            by
+            <see cref="P:System.Exception.InnerException"/>
+            method).
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.OcrException.#ctor(System.String)">
+            <summary>Creates a new OcrException.</summary>
+            <param name="msg">the detail message.</param>
+        </member>
+        <member name="P:iText.Pdfocr.OcrException.Message">
+            <summary><inheritDoc/></summary>
+        </member>
+        <member name="M:iText.Pdfocr.OcrException.GetMessageParams">
+            <summary>Gets additional params for Exception message.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.OcrException.SetMessageParams(System.String[])">
+            <summary>Sets additional params for Exception message.</summary>
+            <param name="messageParams">additional params.</param>
+            <returns>object itself.</returns>
+        </member>
+        <member name="T:iText.Pdfocr.OcrPdfCreator">
+            <summary>
+            <see cref="T:iText.Pdfocr.OcrPdfCreator"/>
+            is the class that creates PDF documents containing input
+            images and text that was recognized using provided
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>.
+            </summary>
+            <remarks>
+            <see cref="T:iText.Pdfocr.OcrPdfCreator"/>
+            is the class that creates PDF documents containing input
+            images and text that was recognized using provided
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>.
+            <see cref="T:iText.Pdfocr.OcrPdfCreator"/>
+            provides possibilities to set list of input images to
+            be used for OCR, to set scaling mode for images, to set color of text in
+            output PDF document, to set fixed size of the PDF document's page and to
+            perform OCR using given images and to return
+            <see cref="T:iText.Kernel.Pdf.PdfDocument"/>
+            as result.
+            OCR is based on the provided
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>
+            (e.g. tesseract reader). This parameter is obligatory and it should be
+            provided in constructor
+            or using setter.
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.OcrPdfCreator.LOGGER">
+            <summary>The logger.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.OcrPdfCreator.LEFT_IDX">
+            <summary>Indices in array representing bbox.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.OcrPdfCreator.ocrEngine">
+            <summary>
+            Selected
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>.
+            </summary>
+        </member>
+        <member name="F:iText.Pdfocr.OcrPdfCreator.ocrPdfCreatorProperties">
+            <summary>Set of properties.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.#ctor(iText.Pdfocr.IOcrEngine)">
+            <summary>
+            Creates a new
+            <see cref="T:iText.Pdfocr.OcrPdfCreator"/>
+            instance.
+            </summary>
+            <param name="ocrEngine">
+            
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>
+            selected OCR Reader
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.#ctor(iText.Pdfocr.IOcrEngine,iText.Pdfocr.OcrPdfCreatorProperties)">
+            <summary>
+            Creates a new
+            <see cref="T:iText.Pdfocr.OcrPdfCreator"/>
+            instance.
+            </summary>
+            <param name="ocrEngine">
+            selected OCR Reader
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>
+            </param>
+            <param name="ocrPdfCreatorProperties">
+            set of properties for
+            <see cref="T:iText.Pdfocr.OcrPdfCreator"/>
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.GetOcrPdfCreatorProperties">
+            <summary>
+            Gets properties for
+            <see cref="T:iText.Pdfocr.OcrPdfCreator"/>.
+            </summary>
+            <returns>
+            set properties
+            <see cref="T:iText.Pdfocr.OcrPdfCreatorProperties"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.SetOcrPdfCreatorProperties(iText.Pdfocr.OcrPdfCreatorProperties)">
+            <summary>
+            Sets properties for
+            <see cref="T:iText.Pdfocr.OcrPdfCreator"/>.
+            </summary>
+            <param name="ocrPdfCreatorProperties">
+            set of properties
+            <see cref="T:iText.Pdfocr.OcrPdfCreatorProperties"/>
+            for
+            <see cref="T:iText.Pdfocr.OcrPdfCreator"/>
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.CreatePdfA(System.Collections.Generic.IList{System.IO.FileInfo},iText.Kernel.Pdf.PdfWriter,iText.Kernel.Pdf.PdfOutputIntent)">
+            <summary>
+            Performs OCR with set parameters using provided
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>
+            and
+            creates PDF using provided
+            <see cref="T:iText.Kernel.Pdf.PdfWriter"/>
+            and
+            <see cref="T:iText.Kernel.Pdf.PdfOutputIntent"/>.
+            </summary>
+            <remarks>
+            Performs OCR with set parameters using provided
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>
+            and
+            creates PDF using provided
+            <see cref="T:iText.Kernel.Pdf.PdfWriter"/>
+            and
+            <see cref="T:iText.Kernel.Pdf.PdfOutputIntent"/>.
+            PDF/A-3u document will be created if
+            provided
+            <see cref="T:iText.Kernel.Pdf.PdfOutputIntent"/>
+            is not null.
+            </remarks>
+            <param name="inputImages">
+            
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of images to be OCRed
+            </param>
+            <param name="pdfWriter">
+            the
+            <see cref="T:iText.Kernel.Pdf.PdfWriter"/>
+            object
+            to write final PDF document to
+            </param>
+            <param name="pdfOutputIntent">
+            
+            <see cref="T:iText.Kernel.Pdf.PdfOutputIntent"/>
+            for PDF/A-3u document
+            </param>
+            <returns>
+            result PDF/A-3u
+            <see cref="T:iText.Kernel.Pdf.PdfDocument"/>
+            object
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.CreatePdf(System.Collections.Generic.IList{System.IO.FileInfo},iText.Kernel.Pdf.PdfWriter)">
+            <summary>
+            Performs OCR with set parameters using provided
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>
+            and
+            creates PDF using provided
+            <see cref="T:iText.Kernel.Pdf.PdfWriter"/>.
+            </summary>
+            <param name="inputImages">
+            
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of images to be OCRed
+            </param>
+            <param name="pdfWriter">
+            the
+            <see cref="T:iText.Kernel.Pdf.PdfWriter"/>
+            object
+            to write final PDF document to
+            </param>
+            <returns>
+            result
+            <see cref="T:iText.Kernel.Pdf.PdfDocument"/>
+            object
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.GetOcrEngine">
+            <summary>
+            Gets used
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>.
+            </summary>
+            <remarks>
+            Gets used
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>.
+            Returns
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>
+            reader object to perform OCR.
+            </remarks>
+            <returns>
+            selected
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>
+            instance
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.SetOcrEngine(iText.Pdfocr.IOcrEngine)">
+            <summary>
+            Sets
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>
+            reader object to perform OCR.
+            </summary>
+            <param name="reader">
+            selected
+            <see cref="T:iText.Pdfocr.IOcrEngine"/>
+            instance
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.AddToCanvas(iText.Kernel.Pdf.PdfDocument,iText.Kernel.Geom.Rectangle,System.Collections.Generic.IList{iText.Pdfocr.TextInfo},iText.IO.Image.ImageData,System.Boolean)">
+            <summary>Adds image (or its one page) and text that was found there to canvas.</summary>
+            <param name="pdfDocument">
+            result
+            <see cref="T:iText.Kernel.Pdf.PdfDocument"/>
+            </param>
+            <param name="imageSize">
+            size of the image according to the selected
+            <see cref="T:iText.Pdfocr.ScaleMode"/>
+            </param>
+            <param name="pageText">text that was found on this image (or on this page)</param>
+            <param name="imageData">
+            input image if it is a single page or its one page if
+            this is a multi-page image
+            </param>
+            <param name="createPdfA3u">true if PDF/A3u document is being created</param>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.CreatePdfDocument(iText.Kernel.Pdf.PdfWriter,iText.Kernel.Pdf.PdfOutputIntent,System.Collections.Generic.IDictionary{System.IO.FileInfo,System.Collections.Generic.IDictionary{System.Int32,System.Collections.Generic.IList{iText.Pdfocr.TextInfo}}})">
+            <summary>
+            Creates a new PDF document using provided properties, adds images with
+            recognized text.
+            </summary>
+            <param name="pdfWriter">
+            the
+            <see cref="T:iText.Kernel.Pdf.PdfWriter"/>
+            object
+            to write final PDF document to
+            </param>
+            <param name="pdfOutputIntent">
+            
+            <see cref="T:iText.Kernel.Pdf.PdfOutputIntent"/>
+            for PDF/A-3u document
+            </param>
+            <param name="imagesTextData">
+            map that contains input image files as keys,
+            and as value: map pageNumber -&gt; text for the page
+            </param>
+            <returns>
+            result
+            <see cref="T:iText.Kernel.Pdf.PdfDocument"/>
+            object
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.AddDataToPdfDocument(System.Collections.Generic.IDictionary{System.IO.FileInfo,System.Collections.Generic.IDictionary{System.Int32,System.Collections.Generic.IList{iText.Pdfocr.TextInfo}}},iText.Kernel.Pdf.PdfDocument,System.Boolean)">
+            <summary>Places provided images and recognized text to the result PDF document.</summary>
+            <param name="imagesTextData">
+            map that contains input image
+            files as keys, and as value:
+            map pageNumber -&gt; text for the page
+            </param>
+            <param name="pdfDocument">
+            result
+            <see cref="T:iText.Kernel.Pdf.PdfDocument"/>
+            </param>
+            <param name="createPdfA3u">true if PDF/A3u document is being created</param>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.AddImageToCanvas(iText.IO.Image.ImageData,iText.Kernel.Geom.Rectangle,iText.Kernel.Pdf.Canvas.PdfCanvas)">
+            <summary>Places given image to canvas to background to a separate layer.</summary>
+            <param name="imageData">
+            input image as
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <param name="imageSize">
+            size of the image according to the selected
+            <see cref="T:iText.Pdfocr.ScaleMode"/>
+            </param>
+            <param name="pdfCanvas">canvas to place the image</param>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.AddTextToCanvas(iText.Kernel.Geom.Rectangle,System.Collections.Generic.IList{iText.Pdfocr.TextInfo},iText.Kernel.Pdf.Canvas.PdfCanvas,System.Single,iText.Kernel.Geom.Rectangle)">
+            <summary>Places retrieved text to canvas to a separate layer.</summary>
+            <param name="imageSize">
+            size of the image according to the selected
+            <see cref="T:iText.Pdfocr.ScaleMode"/>
+            </param>
+            <param name="pageText">text that was found on this image (or on this page)</param>
+            <param name="pdfCanvas">canvas to place the text</param>
+            <param name="multiplier">coefficient to adjust text placing on canvas</param>
+            <param name="pageMediaBox">page parameters</param>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.CreatePdfLayers(System.String,System.String,iText.Kernel.Pdf.PdfDocument)">
+            <summary>
+            Creates layers for image and text according rules set in
+            <see cref="T:iText.Pdfocr.OcrPdfCreatorProperties"/>.
+            </summary>
+            <param name="imageLayerName">name of the image layer</param>
+            <param name="textLayerName">name of the text layer</param>
+            <param name="pdfDocument">document to add layers to</param>
+            <returns>
+            array of two layers: first layer is for image, second layer is for text.
+            Elements may be null meaning that layer creation is not requested
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.GetLeft(iText.Pdfocr.TextInfo,System.Single)">
+            <summary>Get left bound of text chunk.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.GetRight(iText.Pdfocr.TextInfo,System.Single)">
+            <summary>Get right bound of text chunk.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.GetTop(iText.Pdfocr.TextInfo,System.Single)">
+            <summary>Get top bound of text chunk.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.GetBottom(iText.Pdfocr.TextInfo,System.Single)">
+            <summary>Get bottom bound of text chunk.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.LineNotEmpty(System.String,System.Single,System.Single)">
+            <summary>Check if line is not empty.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.GetWidthPt(iText.Pdfocr.TextInfo,System.Single)">
+            <summary>Get width of text chunk in points.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.GetHeightPt(iText.Pdfocr.TextInfo,System.Single)">
+            <summary>Get height of text chunk in points.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.GetXOffsetPt(iText.Pdfocr.TextInfo,System.Single)">
+            <summary>Get horizontal text offset in points.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreator.GetYOffsetPt(iText.Pdfocr.TextInfo,System.Single,iText.Kernel.Geom.Rectangle)">
+            <summary>Get vertical text offset in points.</summary>
+        </member>
+        <member name="T:iText.Pdfocr.OcrPdfCreator.NotDefCheckingPdfCanvas">
+            <summary>A handler for PDF canvas that validates existing glyphs.</summary>
+        </member>
+        <member name="T:iText.Pdfocr.OcrPdfCreator.ActualTextCheckingGlyphLine">
+            <summary>
+            A handler for GlyphLine that checks existing actual text not to
+            overwrite it.
+            </summary>
+        </member>
+        <member name="T:iText.Pdfocr.OcrPdfCreatorMetaInfo">
+            <summary>The meta info that is used internally by pdfOcr to pass a wrapped custom meta data</summary>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorMetaInfo.#ctor(iText.Kernel.Counter.Event.IMetaInfo,System.Guid,iText.Pdfocr.OcrPdfCreatorMetaInfo.PdfDocumentType)">
+            <summary>Creates an inner meta info wrapper</summary>
+            <param name="wrappedMetaInfo">the meta info to be wrapped</param>
+            <param name="uuid">a unique String which corresponds to the ocr event for which this meta info is passed</param>
+            <param name="pdfDocumentType">a type of the document which is created during the corresponding ocr event</param>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorMetaInfo.GetDocumentId">
+            <summary>Gets the unique String which corresponds to the ocr event for which this meta info is passed</summary>
+            <returns>the unique String which corresponds to the ocr event for which this meta info is passed</returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorMetaInfo.GetPdfDocumentType">
+            <summary>Gets the type of the document which is created during the corresponding ocr event</summary>
+            <returns>the type of the document which is created during the corresponding ocr event</returns>
+        </member>
+        <member name="T:iText.Pdfocr.OcrPdfCreatorMetaInfo.PdfDocumentType">
+            <summary>The enum which represents types of documents, for which pdfOcr sends different events</summary>
+        </member>
+        <member name="T:iText.Pdfocr.OcrPdfCreatorProperties">
+            <summary>
+            Properties that will be used by the
+            <see cref="T:iText.Pdfocr.OcrPdfCreator"/>.
+            </summary>
+        </member>
+        <member name="F:iText.Pdfocr.OcrPdfCreatorProperties.fontProvider">
+            <summary>Font provider.</summary>
+            <remarks>
+            Font provider.
+            By default it is
+            <see cref="T:iText.Pdfocr.PdfOcrFontProvider"/>
+            object with default font
+            family
+            <see cref="M:iText.Pdfocr.PdfOcrFontProvider.GetDefaultFontFamily"/>.
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.OcrPdfCreatorProperties.defaultFontFamily">
+            <summary>Default font family.</summary>
+            <remarks>
+            Default font family.
+            <see cref="M:iText.Pdfocr.PdfOcrFontProvider.GetDefaultFontFamily"/>
+            by default.
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.OcrPdfCreatorProperties.textColor">
+            <summary>Color of the text in the output PDF document.</summary>
+            <remarks>
+            Color of the text in the output PDF document.
+            Text will be transparent by default.
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.OcrPdfCreatorProperties.scaleMode">
+            <summary>Scale mode for input images.</summary>
+            <remarks>
+            Scale mode for input images.
+            <see cref="F:iText.Pdfocr.ScaleMode.SCALE_TO_FIT"/>
+            by default. But this value will be used
+            only if
+            <see cref="F:iText.Pdfocr.OcrPdfCreatorProperties.pageSize"/>
+            is not null;
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.OcrPdfCreatorProperties.pageSize">
+            <summary>Size of the PDF document pages.</summary>
+            <remarks>
+            Size of the PDF document pages.
+            <c>null</c> by default.
+            If this parameter is null, size of the page will be equal to the
+            input image size. If this parameter is not null, input image will be
+            scaled according to the selected
+            <see cref="T:iText.Pdfocr.ScaleMode"/>.
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.OcrPdfCreatorProperties.imageLayerName">
+            <summary>Name of the image layer.</summary>
+            <remarks>
+            Name of the image layer.
+            <c>null</c> by default.
+            If this parameter is null then image is placed directly in canvas instead of layer.
+            If value of imageLayerName is equal to value of textLayerName then image and text placed in one layer.
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.OcrPdfCreatorProperties.textLayerName">
+            <summary>Name of the text layer.</summary>
+            <remarks>
+            Name of the text layer.
+            <c>null</c> by default.
+            If this parameter is null then text is placed directly in canvas instead of layer.
+            If value of textLayerName is equal to value of imageLayerName then text and image placed in one layer.
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.OcrPdfCreatorProperties.pdfLang">
+            <summary>PDF Language.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.OcrPdfCreatorProperties.title">
+            <summary>Title of the created document.</summary>
+            <remarks>
+            Title of the created document.
+            It is not set by default.
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.OcrPdfCreatorProperties.imageRotationHandler">
+            <summary>
+            Handles rotated images as described in
+            <see cref="T:iText.Pdfocr.IImageRotationHandler"/>.
+            </summary>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.#ctor">
+            <summary>
+            Creates a new
+            <see cref="T:iText.Pdfocr.OcrPdfCreatorProperties"/>
+            instance.
+            </summary>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.#ctor(iText.Pdfocr.OcrPdfCreatorProperties)">
+            <summary>
+            Creates a new
+            <see cref="T:iText.Pdfocr.OcrPdfCreatorProperties"/>
+            instance
+            based on another
+            <see cref="T:iText.Pdfocr.OcrPdfCreatorProperties"/>
+            instance (copy
+            constructor).
+            </summary>
+            <param name="other">
+            the other
+            <see cref="T:iText.Pdfocr.OcrPdfCreatorProperties"/>
+            instance
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.GetTextColor">
+            <summary>Gets text color in output PDF document.</summary>
+            <returns>
+            set text
+            <see cref="T:iText.Kernel.Colors.Color"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.SetTextColor(iText.Kernel.Colors.Color)">
+            <summary>Sets text color in output PDF document.</summary>
+            <remarks>
+            Sets text color in output PDF document.
+            Text will be transparent by default.
+            </remarks>
+            <param name="textColor">
+            required text
+            <see cref="T:iText.Kernel.Colors.Color"/>
+            </param>
+            <returns>
+            the
+            <see cref="T:iText.Pdfocr.OcrPdfCreatorProperties"/>
+            instance
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.GetScaleMode">
+            <summary>
+            Gets scale mode for input images using available options from
+            <see cref="T:iText.Pdfocr.ScaleMode"/>
+            enumeration.
+            </summary>
+            <returns>
+            selected
+            <see cref="T:iText.Pdfocr.ScaleMode"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.SetScaleMode(iText.Pdfocr.ScaleMode)">
+            <summary>
+            Sets scale mode for input images using available options
+            from
+            <see cref="T:iText.Pdfocr.ScaleMode"/>
+            enumeration.
+            </summary>
+            <param name="scaleMode">
+            selected
+            <see cref="T:iText.Pdfocr.ScaleMode"/>
+            </param>
+            <returns>
+            the
+            <see cref="T:iText.Pdfocr.OcrPdfCreatorProperties"/>
+            instance
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.GetPageSize">
+            <summary>Gets required size for output PDF document.</summary>
+            <remarks>
+            Gets required size for output PDF document. Real size of the page will
+            be calculated according to the selected
+            <see cref="T:iText.Pdfocr.ScaleMode"/>
+            </remarks>
+            <returns>
+            required page size as
+            <see cref="T:iText.Kernel.Geom.Rectangle"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.SetPageSize(iText.Kernel.Geom.Rectangle)">
+            <summary>Sets required size for output PDF document.</summary>
+            <param name="pageSize">
+            requested page
+            size as
+            <see cref="T:iText.Kernel.Geom.Rectangle"/>
+            </param>
+            <returns>
+            the
+            <see cref="T:iText.Pdfocr.OcrPdfCreatorProperties"/>
+            instance
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.GetImageLayerName">
+            <summary>Gets name of image layer.</summary>
+            <returns>
+            image layer's name as
+            <see cref="T:System.String"/>
+            if it was
+            manually set, otherwise - <c>null</c>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.SetImageLayerName(System.String)">
+            <summary>Sets name for the image layer.</summary>
+            <remarks>
+            Sets name for the image layer.
+            <c>null</c> by default.
+            If null then image is placed directly in canvas instead of layer.
+            If image layer name is equal to text layer name then text and image placed in one layer.
+            </remarks>
+            <param name="layerName">
+            name of the image layer
+            as
+            <see cref="T:System.String"/>
+            </param>
+            <returns>
+            the
+            <see cref="T:iText.Pdfocr.OcrPdfCreatorProperties"/>
+            instance
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.GetTextLayerName">
+            <summary>Gets name of text layer.</summary>
+            <returns>
+            text layer's name as
+            <see cref="T:System.String"/>
+            if it was
+            manually set, otherwise - <c>null</c>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.SetTextLayerName(System.String)">
+            <summary>Sets name for the text layer.</summary>
+            <remarks>
+            Sets name for the text layer.
+            <c>null</c> by default.
+            If null then text is placed directly in canvas instead of layer.
+            If text layer name is equal to image layer name then text and image placed in one layer.
+            </remarks>
+            <param name="layerName">
+            of the text layer as
+            <see cref="T:System.String"/>
+            </param>
+            <returns>
+            the
+            <see cref="T:iText.Pdfocr.OcrPdfCreatorProperties"/>
+            instance
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.GetPdfLang">
+            <summary>Gets PDF language.</summary>
+            <returns>
+            PDF document language as
+            <see cref="T:System.String"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.SetPdfLang(System.String)">
+            <summary>Specify PDF natural language, and optionally locale.</summary>
+            <remarks>
+            Specify PDF natural language, and optionally locale.
+            Language identifier shall either be the empty text string, to indicate that the language is unknown,
+            or a Language-Tag as defined in BCP 47 (2009), Tags for the Identification of Languages.
+            </remarks>
+            <param name="language">
+            PDF document language as
+            <see cref="T:System.String"/>
+            ,
+            e.g. "en-US", etc.
+            </param>
+            <returns>
+            the
+            <see cref="T:iText.Pdfocr.OcrPdfCreatorProperties"/>
+            instance
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.GetTitle">
+            <summary>Gets PDF document title.</summary>
+            <returns>
+            PDF title as
+            <see cref="T:System.String"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.SetTitle(System.String)">
+            <summary>Sets PDF document title.</summary>
+            <param name="title">
+            PDF title as
+            <see cref="T:System.String"/>
+            </param>
+            <returns>
+            the
+            <see cref="T:iText.Pdfocr.OcrPdfCreatorProperties"/>
+            instance
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.GetFontProvider">
+            <summary>
+            Returns FontProvider that was set previously or if it is
+            <c>null</c> a new instance of
+            <see cref="T:iText.Pdfocr.PdfOcrFontProvider"/>
+            is
+            returned.
+            </summary>
+            <returns>
+            
+            <see cref="T:iText.Layout.Font.FontProvider"/>
+            object
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.SetFontProvider(iText.Layout.Font.FontProvider)">
+            <summary>Sets font provider.</summary>
+            <remarks>
+            Sets font provider.
+            Please note that passed FontProvider is not to be used in multithreaded
+            environments or for any parallel processing.
+            There will be set the following default font family:
+            <see cref="M:iText.Pdfocr.PdfOcrFontProvider.GetDefaultFontFamily"/>
+            </remarks>
+            <param name="fontProvider">
+            selected
+            <see cref="T:iText.Layout.Font.FontProvider"/>
+            instance
+            </param>
+            <returns>
+            the
+            <see cref="T:iText.Pdfocr.OcrPdfCreatorProperties"/>
+            instance
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.SetFontProvider(iText.Layout.Font.FontProvider,System.String)">
+            <summary>Sets font provider and default font family.</summary>
+            <remarks>
+            Sets font provider and default font family.
+            Please note that passed FontProvider is not to be used in multithreaded
+            environments or for any parallel processing.
+            </remarks>
+            <param name="fontProvider">
+            selected
+            <see cref="T:iText.Layout.Font.FontProvider"/>
+            instance
+            </param>
+            <param name="defaultFontFamily">
+            preferred font family to be used when selecting
+            font from
+            <see cref="T:iText.Layout.Font.FontProvider"/>.
+            </param>
+            <returns>
+            the
+            <see cref="T:iText.Pdfocr.OcrPdfCreatorProperties"/>
+            instance
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.GetDefaultFontFamily">
+            <summary>
+            Gets preferred font family to be used when selecting font from
+            <see cref="T:iText.Layout.Font.FontProvider"/>.
+            </summary>
+            <returns>
+            if default font family is not set or it is null or empty
+            <see cref="M:iText.Pdfocr.PdfOcrFontProvider.GetDefaultFontFamily"/>
+            is returned
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.GetImageRotationHandler">
+            <summary>Gets image rotation handler instance.</summary>
+            <returns>image rotation handler</returns>
+        </member>
+        <member name="M:iText.Pdfocr.OcrPdfCreatorProperties.SetImageRotationHandler(iText.Pdfocr.IImageRotationHandler)">
+            <summary>Sets image rotation handler instance.</summary>
+            <remarks>
+            Sets image rotation handler instance.
+            If not set - image rotation handling is not applied.
+            </remarks>
+            <param name="imageRotationDetector">image rotation handler instance</param>
+            <returns>
+            the
+            <see cref="T:iText.Pdfocr.OcrPdfCreatorProperties"/>
+            instance
+            </returns>
+        </member>
+        <member name="F:iText.Pdfocr.PdfCreatorUtil.PX_TO_PT">
+            <summary>The Constant to convert pixels to points.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.PdfCreatorUtil.POINTS_PER_INCH">
+            <summary>The Constant for points per inch.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.PdfCreatorUtil.LOGGER">
+            <summary>The logger.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.PdfCreatorUtil.CalculateFontSize(iText.Layout.Document,System.String,System.String,System.Single,System.Single)">
+            <summary>
+            Calculates font size according to given bbox height, width and selected
+            font.
+            </summary>
+            <param name="document">
+            PDF document as a
+            <see cref="T:iText.Layout.Document"/>
+            object
+            </param>
+            <param name="line">text line</param>
+            <param name="fontFamily">default font family</param>
+            <param name="bboxHeightPt">height of bbox calculated by OCR Reader</param>
+            <param name="bboxWidthPt">width of bbox calculated by OCR Reader</param>
+            <returns>font size</returns>
+        </member>
+        <member name="M:iText.Pdfocr.PdfCreatorUtil.GetRealLineWidth(iText.Layout.Document,System.String,System.String,System.Single)">
+            <summary>
+            Calculated real width of a paragraph with given text line, font provider
+            and font size.
+            </summary>
+            <param name="document">
+            PDF document as a
+            <see cref="T:iText.Layout.Document"/>
+            object
+            </param>
+            <param name="line">text line</param>
+            <param name="fontFamily">default font family</param>
+            <param name="fontSize">calculated font size</param>
+            <returns>real width of text line in paragraph</returns>
+        </member>
+        <member name="M:iText.Pdfocr.PdfCreatorUtil.CalculateImageCoordinates(iText.Kernel.Geom.Rectangle,iText.Kernel.Geom.Rectangle)">
+            <summary>Calculates image coordinates on the page.</summary>
+            <param name="size">size of the page</param>
+            <param name="imageSize">size of the image</param>
+            <returns>list of two elements (coordinates): first - x, second - y.</returns>
+        </member>
+        <member name="M:iText.Pdfocr.PdfCreatorUtil.GetImageData(System.IO.FileInfo,iText.Pdfocr.IImageRotationHandler)">
+            <summary>
+            Retrieves
+            <see cref="T:iText.IO.Image.ImageData"/>
+            from the
+            input
+            <see cref="T:System.IO.FileInfo"/>.
+            </summary>
+            <param name="inputImage">
+            input image as
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <param name="imageRotationHandler">
+            image rotation handler
+            <see cref="T:iText.Pdfocr.IImageRotationHandler"/>
+            </param>
+            <returns>
+            list of
+            <see cref="T:iText.IO.Image.ImageData"/>
+            objects
+            (more than one element in the list if it is a multipage tiff)
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.PdfCreatorUtil.CalculateImageSize(iText.IO.Image.ImageData,iText.Pdfocr.ScaleMode,iText.Kernel.Geom.Rectangle)">
+            <summary>
+            Calculates the size of the PDF document page according to the provided
+            <see cref="T:iText.Pdfocr.ScaleMode"/>.
+            </summary>
+            <param name="imageData">
+            input image or its one page as
+            <see cref="T:iText.IO.Image.ImageData"/>
+            </param>
+            <param name="scaleMode">
+            required
+            <see cref="T:iText.Pdfocr.ScaleMode"/>
+            that could be
+            set using
+            <see cref="M:iText.Pdfocr.OcrPdfCreatorProperties.SetScaleMode(iText.Pdfocr.ScaleMode)"/>
+            method
+            </param>
+            <param name="requiredSize">
+            size of the page that could be using
+            <see cref="M:iText.Pdfocr.OcrPdfCreatorProperties.SetPageSize(iText.Kernel.Geom.Rectangle)"/>
+            method
+            </param>
+            <returns>
+            
+            <see cref="T:iText.Kernel.Geom.Rectangle"/>
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.PdfCreatorUtil.GetPoints(System.Single)">
+            <summary>Converts value from pixels to points.</summary>
+            <param name="pixels">input value in pixels</param>
+            <returns>result value in points</returns>
+        </member>
+        <member name="M:iText.Pdfocr.PdfCreatorUtil.GetNumberOfPageTiff(System.IO.FileInfo)">
+            <summary>Counts number of pages in the provided tiff image.</summary>
+            <param name="inputImage">
+            input image
+            <see cref="T:System.IO.FileInfo"/>
+            </param>
+            <returns>number of pages in the provided TIFF image</returns>
+        </member>
+        <member name="F:iText.Pdfocr.PdfOcrFontProvider.DEFAULT_FONT_PATH">
+            <summary>Path to the default font.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.PdfOcrFontProvider.DEFAULT_FONT_FAMILY">
+            <summary>Default font family.</summary>
+        </member>
+        <member name="M:iText.Pdfocr.PdfOcrFontProvider.#ctor">
+            <summary>
+            Creates a new
+            <see cref="T:iText.Pdfocr.PdfOcrFontProvider"/>
+            instance with the default font
+            and the default font family.
+            </summary>
+        </member>
+        <member name="M:iText.Pdfocr.PdfOcrFontProvider.#ctor(iText.Layout.Font.FontSet,System.String)">
+            <summary>
+            Creates a new
+            <see cref="T:iText.Pdfocr.PdfOcrFontProvider"/>
+            instance.
+            </summary>
+        </member>
+        <member name="M:iText.Pdfocr.PdfOcrFontProvider.GetDefaultFontFamily">
+            <summary>Gets default font family.</summary>
+            <returns>default font family as a string</returns>
+        </member>
+        <member name="M:iText.Pdfocr.PdfOcrFontProvider.GetDefaultFont">
+            <summary>Gets default font as a byte array.</summary>
+            <returns>default font as byte[]</returns>
+        </member>
+        <member name="T:iText.Pdfocr.ScaleMode">
+            <summary>Enumeration of the possible scale modes for input images.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.ScaleMode.SCALE_WIDTH">
+            <summary>
+            Only width of the image will be proportionally scaled to fit
+            required size that is set using
+            <see cref="M:iText.Pdfocr.OcrPdfCreatorProperties.SetPageSize(iText.Kernel.Geom.Rectangle)"/>
+            method.
+            </summary>
+            <remarks>
+            Only width of the image will be proportionally scaled to fit
+            required size that is set using
+            <see cref="M:iText.Pdfocr.OcrPdfCreatorProperties.SetPageSize(iText.Kernel.Geom.Rectangle)"/>
+            method.
+            Height will be equal to the page height that was set using
+            <see cref="M:iText.Pdfocr.OcrPdfCreatorProperties.SetPageSize(iText.Kernel.Geom.Rectangle)"/>
+            method and
+            width will be proportionally scaled to keep the original aspect ratio.
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.ScaleMode.SCALE_HEIGHT">
+            <summary>
+            Only height of the image will be proportionally scaled to fit
+            required size that is set using
+            <see cref="M:iText.Pdfocr.OcrPdfCreatorProperties.SetPageSize(iText.Kernel.Geom.Rectangle)"/>
+            method.
+            </summary>
+            <remarks>
+            Only height of the image will be proportionally scaled to fit
+            required size that is set using
+            <see cref="M:iText.Pdfocr.OcrPdfCreatorProperties.SetPageSize(iText.Kernel.Geom.Rectangle)"/>
+            method.
+            Width will be equal to the page width that was set using
+            <see cref="M:iText.Pdfocr.OcrPdfCreatorProperties.SetPageSize(iText.Kernel.Geom.Rectangle)"/>
+            method and
+            height will be proportionally scaled to keep the original aspect ratio.
+            </remarks>
+        </member>
+        <member name="F:iText.Pdfocr.ScaleMode.SCALE_TO_FIT">
+            <summary>
+            The image will be scaled to fit within the page width and height dimensions that are set using
+            <see cref="M:iText.Pdfocr.OcrPdfCreatorProperties.SetPageSize(iText.Kernel.Geom.Rectangle)"/>
+            method.
+            </summary>
+            <remarks>
+            The image will be scaled to fit within the page width and height dimensions that are set using
+            <see cref="M:iText.Pdfocr.OcrPdfCreatorProperties.SetPageSize(iText.Kernel.Geom.Rectangle)"/>
+            method.
+            Original aspect ratio of the image stays unchanged.
+            </remarks>
+        </member>
+        <member name="T:iText.Pdfocr.TextInfo">
+            <summary>
+            This class describes how recognized text is positioned on the image
+            providing bbox for each text item (could be a line or a word).
+            </summary>
+        </member>
+        <member name="F:iText.Pdfocr.TextInfo.text">
+            <summary>Contains any text.</summary>
+        </member>
+        <member name="F:iText.Pdfocr.TextInfo.bboxRect">
+            <summary>
+            <see cref="T:iText.Kernel.Geom.Rectangle"/>
+            describing text bbox (lower-left based) expressed in points.
+            </summary>
+        </member>
+        <member name="F:iText.Pdfocr.TextInfo.bbox">
+            <summary>Contains 4 float coordinates: bbox parameters.</summary>
+            <remarks>
+            Contains 4 float coordinates: bbox parameters.
+            Alike bboxRect described by
+            <see cref="T:iText.Kernel.Geom.Rectangle"/>
+            coordinates are upper-left based and expressed in pixels.
+            </remarks>
+        </member>
+        <member name="M:iText.Pdfocr.TextInfo.#ctor">
+            <summary>
+            Creates a new
+            <see cref="T:iText.Pdfocr.TextInfo"/>
+            instance.
+            </summary>
+        </member>
+        <member name="M:iText.Pdfocr.TextInfo.#ctor(iText.Pdfocr.TextInfo)">
+            <summary>
+            Creates a new
+            <see cref="T:iText.Pdfocr.TextInfo"/>
+            instance from existing one.
+            </summary>
+            <param name="textInfo">to create from</param>
+        </member>
+        <member name="M:iText.Pdfocr.TextInfo.#ctor(System.String,iText.Kernel.Geom.Rectangle)">
+            <summary>
+            Creates a new
+            <see cref="T:iText.Pdfocr.TextInfo"/>
+            instance.
+            </summary>
+            <param name="text">any text</param>
+            <param name="bbox">
+            
+            <see cref="T:iText.Kernel.Geom.Rectangle"/>
+            describing text bbox
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.TextInfo.#ctor(System.String,System.Collections.Generic.IList{System.Single})">
+            <summary>
+            Creates a new
+            <see cref="T:iText.Pdfocr.TextInfo"/>
+            instance.
+            </summary>
+            <param name="text">any text</param>
+            <param name="bbox">
+            
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of bbox parameters
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.TextInfo.#ctor(System.String,iText.Kernel.Geom.Rectangle,System.Collections.Generic.IList{System.Single})">
+            <summary>
+            Creates a new
+            <see cref="T:iText.Pdfocr.TextInfo"/>
+            instance.
+            </summary>
+            <param name="text">any text</param>
+            <param name="bboxRect">
+            
+            <see cref="T:iText.Kernel.Geom.Rectangle"/>
+            describing text bbox
+            </param>
+            <param name="bbox">
+            
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of bbox parameters
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.TextInfo.GetText">
+            <summary>Gets text element.</summary>
+            <returns>String</returns>
+        </member>
+        <member name="M:iText.Pdfocr.TextInfo.SetText(System.String)">
+            <summary>Sets text element.</summary>
+            <param name="newText">retrieved text</param>
+        </member>
+        <member name="M:iText.Pdfocr.TextInfo.GetBboxRect">
+            <summary>Gets bbox coordinates.</summary>
+            <returns>
+            
+            <see cref="T:iText.Kernel.Geom.Rectangle"/>
+            describing text bbox
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.TextInfo.SetBboxRect(iText.Kernel.Geom.Rectangle)">
+            <summary>Sets text bbox.</summary>
+            <param name="bbox">
+            
+            <see cref="T:iText.Kernel.Geom.Rectangle"/>
+            describing text bbox
+            </param>
+        </member>
+        <member name="M:iText.Pdfocr.TextInfo.GetBbox">
+            <summary>Gets bbox coordinates.</summary>
+            <returns>
+            
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of bbox parameters
+            </returns>
+        </member>
+        <member name="M:iText.Pdfocr.TextInfo.SetBbox(System.Collections.Generic.IList{System.Single})">
+            <summary>Sets bbox coordinates.</summary>
+            <param name="bbox">
+            
+            <see cref="!:System.Collections.IList&lt;E&gt;"/>
+            of bbox parameters
+            </param>
+        </member>
+    </members>
+</doc>
